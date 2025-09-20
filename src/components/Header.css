@@ -1,0 +1,103 @@
+.notch-header {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.notch-container {
+  background: rgba(25, 25, 25, 1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 10px 26px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.nav-button:active {
+  transform: scale(0.95);
+}
+
+.nav-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(25, 25, 25, 0.95);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+  backdrop-filter: blur(10px);
+  z-index: 1001;
+}
+
+.nav-button:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Add some breathing room to the body */
+body {
+  padding-top: 80px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .notch-header {
+    top: 15px;
+  }
+  
+  .notch-container {
+    padding: 10px 20px;
+    gap: 15px;
+    min-width: 180px;
+  }
+  
+  .nav-button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .tooltip {
+    font-size: 11px;
+    padding: 4px 8px;
+    margin-top: 6px;
+  }
+}

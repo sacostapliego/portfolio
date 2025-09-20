@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  gap: 2.5rem; /* 40px = 2.5rem */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2.5rem 2.5rem 2.5rem;
+  min-height: 100vh;
+}
+
+/* Left column for user card - exactly 50% */
+.App > :first-child {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center; /* Center the card within the 50% column */
+}
+
+/* Right column for main content - exactly 50% */
+.main-content {
+  flex: 0 0 50%;
+  min-width: 0;
+  padding-left: 1rem; /* Small padding for breathing room */
+}
+
+.main-content h1 {
+  color: white;
+  margin-bottom: 1.25rem;
+  font-size: 2.5rem;
+}
+
+.main-content h2 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.main-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 6.25rem 1.25rem 2.5rem 1.25rem;
+  }
+  
+  .App > :first-child {
+    flex: none;
+  }
+  
+  .main-content {
+    flex: none;
+    padding-left: 0;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+}

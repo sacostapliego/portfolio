@@ -1,0 +1,124 @@
+.user-card {
+  height: fit-content;
+  position: sticky;
+  top: 7rem;
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+.user-card-content {
+  background: rgb(255, 255, 255);
+  border-radius: 1.25rem;
+  padding: 2rem;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 16rem;
+  height: 18rem;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.user-info {
+  text-align: center;
+  color: black;
+}
+
+.user-name {
+  font-size: 1.675rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.user-description {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 5rem 0 0 0;
+}
+
+/* Social Links Styles */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  color: black;
+}
+
+.social-link:active {
+  transform: scale(0.95);
+}
+
+.social-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .user-card {
+    position: relative;
+    top: 0;
+    margin-bottom: 1.875rem;
+    max-width: 16rem;
+  }
+  
+  .user-card-content {
+    padding: 1.25rem;
+  }
+  
+  .profile-img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  
+  .user-name {
+    font-size: 1.25rem;
+  }
+  
+  .user-description {
+    font-size: 0.8125rem;
+  }
+  
+  .social-links {
+    gap: 0.75rem;
+  }
+  
+  .social-link svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
