@@ -23,6 +23,11 @@
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 2rem;
   margin-top: 0;
+
+  width: auto;            /* don't fill the row */
+  max-width: 35ch;        /* limit line length */
+  align-self: flex-start; /* prevent flexbox stretching */
+  margin-right: auto; 
 }
 
 /* Info boxes container - horizontal stack */
@@ -37,10 +42,18 @@
 .info-box {
   flex: 0 0 28rem;
   max-width: 100%;
-  background: rgba(25, 25, 25, 0.8);
+  background: var(--card-bg, rgba(25, 25, 25, 0.8));
+  padding: 2rem;
   border-radius: 1rem;
-  padding: 2.5rem;
   height: auto;
+}
+
+.info-box.one {
+  --card-bg: rgba(0, 113, 206, 1);
+}
+
+.info-box.two {
+  --card-bg: rgba(0, 113, 206, 1);
 }
 
 .box-content {
@@ -57,8 +70,8 @@
 }
 
 .logo-placeholder {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -77,26 +90,25 @@
 .text-section {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   flex: 1;
-  justify-content: center; /* Center the text vertically */
 }
 
 .text-line {
-  color: white;
+  color: black;
   font-size: 1rem;
-  line-height: 1.4;
 }
 
 .text-line:first-child {
   font-weight: 600;
   font-size: 1.125rem;
+  margin-top: 1rem;
 }
 
 .text-line:nth-child(2),
 .text-line:nth-child(3) {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(46, 46, 46, 1);
   font-size: 0.875rem;
+  font-weight: 600;
 }
 
 
@@ -131,6 +143,8 @@
   .home-content p.sub-heading {
     font-size: 2rem !important;
     margin-bottom: 1.5rem;
+    max-width: 100%;
+    width: 100%;
   }
   
   .info-boxes-container {
