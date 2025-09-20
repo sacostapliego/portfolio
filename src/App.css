@@ -11,7 +11,7 @@
 
 /* Left column for user card - exactly 50% */
 .App > :first-child {
-  flex: 0 0 38%;
+  flex: 0 1 38%;
   display: flex;
   justify-content: center; /* Center the card within the 50% column */
 }
@@ -19,8 +19,9 @@
 /* Right column for main content - exactly 50% */
 .main-content {
   min-width: 0;
-  padding-left: 1rem; /* Small padding for breathing room */
-  overflow-x: auto;
+  padding-left: 1rem;
+  flex: 1 1 0;
+  
 }
 
 .main-content h1 {

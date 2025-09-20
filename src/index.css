@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -26,8 +30,8 @@ body {
   margin: 0;
   display: block;
   place-items: center;
-  min-width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {

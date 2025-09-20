@@ -4,9 +4,9 @@ import './HomeContent.css';
 const HomeContent = () => {
   return (
     <div className="home-content">
-      <h1 className="main-heading">sf fdg s gf sdg s d</h1>
-      <p className="sub-heading">Self-taught Develope asdfasfasdfasdr</p>
-      
+      <h1 className="main-heading">STEVEN<br />ACOSTA-PLIEGO</h1>
+      <p className="sub-heading">Self-taught Developer</p>
+
       <div className="info-boxes-container">
         <div className="info-box">
           <div className="box-content">
@@ -17,8 +17,8 @@ const HomeContent = () => {
             </div>
             <div className="text-section">
               <div className="text-line">Georgia State University</div>
-              <div className="text-line">Second line of text</div>
-              <div className="text-line">Third line of text</div>
+              <div className="text-line">Bachelor of Science in Computer Science</div>
+              <div className="text-line">GPA: 3.78/4.0</div>
             </div>
           </div>
         </div>
