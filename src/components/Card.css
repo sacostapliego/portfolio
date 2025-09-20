@@ -10,6 +10,30 @@
   background: rgb(255, 255, 255);
   border-radius: 1.25rem;
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-card-content::before {
+  content: '';
+  position: absolute;
+  top: -3rem;
+  right: -3rem;
+  width: 150px;
+  height: 150px;
+  border: 5px dashed rgba(137, 207, 240, 1);
+  border-radius: 50%;
+}
+
+.user-card-content::after {
+  content: '';
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  width: 125px;
+  height: 125px;
+  border: 5px dashed rgba(137, 207, 240, 1);
+  border-radius: 50%;
 }
 
 .profile-image {
@@ -26,9 +50,6 @@
   transition: transform 0.3s ease;
 }
 
-.profile-img:hover {
-  transform: scale(1.05);
-}
 
 .user-info {
   text-align: center;
@@ -36,7 +57,7 @@
 }
 
 .user-name {
-  font-size: 1.675rem;
+  font-size: 1.75rem;
   font-weight: 900;
   margin-bottom: 1rem;
   color: black;
@@ -60,7 +81,7 @@
 .social-link {
   background: none;
   border: none;
-  color: blue;
+  color: rgba(137, 207, 240, 1);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.75rem;
@@ -75,7 +96,7 @@
 .social-link:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
-  color: black;
+  color: rgba(137, 207, 240, 1);
 }
 
 .social-link:active {
@@ -99,6 +120,22 @@
   .user-card-content {
     padding: 1.25rem;
   }
+
+  .user-card-content::before {
+    width: 80px;
+    height: 80px;
+    top: -1.5rem;
+    right: -1.5rem;
+    border-width: 3px;
+  }
+  
+  .user-card-content::after {
+    width: 70px;
+    height: 70px;
+    bottom: -1rem;
+    left: -1rem;
+    border-width: 3px;
+  }
   
   .profile-img {
     width: 6.25rem;
@@ -111,6 +148,7 @@
   
   .user-description {
     font-size: 0.8125rem;
+    margin: 2.5rem 0 0 0;
   }
   
   .social-links {

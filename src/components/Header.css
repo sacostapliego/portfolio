@@ -30,6 +30,12 @@
   justify-content: center;
   transition: all 0.2s ease;
   position: relative;
+  outline: none;
+}
+
+.nav-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .nav-button:hover {

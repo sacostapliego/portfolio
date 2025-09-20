@@ -1,0 +1,137 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.home-content h1.main-heading {
+  font-size: 6rem !important;
+  font-weight: 900;
+  color: white;
+  margin-top: 0;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+/* Info boxes container - horizontal stack */
+.info-boxes-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 0;
+}
+
+.info-box {
+  flex: 1;
+  max-width: 100%;
+  background: rgba(25, 25, 25, 0.8);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  height: auto;
+}
+
+.box-content {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-placeholder {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.logo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text section - vertical stack */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center; /* Center the text vertically */
+}
+
+.text-line {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.text-line:first-child {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.text-line:nth-child(2),
+.text-line:nth-child(3) {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+}
+
+
+@media (max-width: 768px) {
+  .home-content {
+    padding-top: 1rem;
+  }
+  
+  .info-boxes-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info-box {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .home-content h1.main-heading {
+    font-size: 3rem !important;
+    word-wrap: break-word; /* Prevent overflow */
+  }
+  
+  .home-content p.sub-heading {
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-boxes-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .info-box {
+    padding: 1rem;
+  }
+  
+  .logo-placeholder {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}

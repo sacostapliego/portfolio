@@ -22,10 +22,10 @@ const Card = () => {
           </p>
           <div className="social-links">
             <a href="https://github.com/sacostapliego" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
-              <FaGithub size={20} />
+              <FaGithub size={22} />
             </a>
             <a href="https://linkedin.com/in/sacostapliego" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
-              <CiLinkedin size={20} />
+              <FaLinkedin size={22} />
             </a>
           </div>
         </div>

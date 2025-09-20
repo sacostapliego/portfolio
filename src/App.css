@@ -1,9 +1,9 @@
 .App {
   display: flex;
-  gap: 2.5rem; /* 40px = 2.5rem */
+  gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem 2.5rem 2.5rem 2.5rem;
+  padding: 9rem 0rem 2.5rem 2.5rem;
   min-height: 100vh;
 }
 
@@ -19,6 +19,8 @@
   flex: 0 0 50%;
   min-width: 0;
   padding-left: 1rem; /* Small padding for breathing room */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .main-content h1 {
@@ -36,6 +38,16 @@
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin-bottom: 1.25rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /* Responsive design */
