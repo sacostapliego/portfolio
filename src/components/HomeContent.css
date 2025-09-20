@@ -23,11 +23,9 @@
 /* Info boxes container - horizontal stack */
 .info-boxes-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
   gap: 1.5rem;
-  margin-top: 2rem;
-  padding: 0 0;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .info-box {
