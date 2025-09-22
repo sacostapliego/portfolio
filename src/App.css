@@ -100,15 +100,6 @@ html {
 .fade-in > *:nth-child(1) { animation-delay: 80ms; }
 .fade-in > *:nth-child(2) { animation-delay: 180ms; }
 
-/* Prevent transforms on the left column so sticky works (desktop only) */
-@media (min-width: 1101px) {
-  .fade-in > .left-column {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .fade-in > * { animation: none; opacity: 1; transform: none; }

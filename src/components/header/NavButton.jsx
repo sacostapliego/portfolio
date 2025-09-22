@@ -11,6 +11,7 @@ const NavButton = ({ label, icon: Icon }) => {
   <Tooltip
     showArrow
     content={label}
+    openDelay={0}
     contentProps={{
       css: {
         '--tooltip-bg': 'rgba(25, 25, 25, 0.95)',
@@ -27,7 +28,6 @@ const NavButton = ({ label, icon: Icon }) => {
       type="button"
       bg="transparent"
       border="0"
-      color="white"
       cursor="pointer"
       p="8px"
       borderRadius="12px"
