@@ -10,6 +10,7 @@ import RecentProjects from './components/recent-projects/RecentProjects'
 function App() {
   return (
     <>
+      {console.log("Header import is", Header)}
       <Header />
       <div className="App fade-in">
         <div className="left-column">

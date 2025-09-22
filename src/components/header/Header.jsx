@@ -1,36 +1,39 @@
 import React from 'react';
-import { LuHouse } from "react-icons/lu";
-import { BsSun } from 'react-icons/bs';
-import { FaRegFolder } from "react-icons/fa6";
-import { IoDocumentTextOutline } from "react-icons/io5";
-import { FaCode } from "react-icons/fa6";
-import './Header.css';
+import { Box, HStack } from '@chakra-ui/react';
+import { LuHouse } from 'react-icons/lu';
+import { FaRegFolder, FaCode } from 'react-icons/fa6';
+import { IoDocumentTextOutline } from 'react-icons/io5';
+import { Tooltip } from "../ui/tooltip"
+import NavButton from './NavButton';
 
 const Header = () => {
   return (
-    <header className="notch-header">
-      <div className="notch-container">
-        <button className="nav-button" aria-label="Home">
-          <LuHouse size={20} />
-          <span className="tooltip">Home</span>
-        </button>
-        
-        <button className="nav-button" aria-label="Projects">
-          <FaRegFolder size={20} />
-          <span className="tooltip">Projects</span>
-        </button>
-        
-        <button className="nav-button" aria-label="Skills">
-          <FaCode size={20} />
-          <span className="tooltip">Skills</span>
-        </button>
-
-        <button className="nav-button" aria-label="Resume">
-          <IoDocumentTextOutline size={20} />
-          <span className="tooltip">Resume</span>
-        </button>
-      </div>
-    </header>
+    <Box
+      as="header"
+      position="fixed"
+      top={{ base: '15px', md: '30px' }}
+      left="50%"
+      transform="translateX(-50%)"
+      zIndex={1000}
+    >
+      <HStack
+        bg="rgba(25, 25, 25, 1)"
+        backdropFilter="blur(20px)"
+        borderRadius="20px"
+        px={{ base: '20px', md: '40px' }}
+        py="10px"
+        align="center"
+        spacing={{ base: '15px', md: '30rem' }}
+        gap={{ base: 3, md: 4 }}
+        minW={{ base: '180px', md: '200px' }}
+        justify="center"
+      >
+        <NavButton label="Home" icon={LuHouse} />
+        <NavButton label="Projects" icon={FaRegFolder} />
+        <NavButton label="Skills" icon={FaCode} />
+        <NavButton label="Resume" icon={IoDocumentTextOutline} />
+      </HStack>
+    </Box>
   );
 };
 

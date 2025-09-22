@@ -2,134 +2,90 @@ import React from 'react';
 import { Box, Image, Heading, Text, HStack, Link } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
+const blue = 'rgba(137, 207, 240, 1)';
+
 const Card = () => {
   return (
     <Box
       as="section"
       height="fit-content"
-      position="sticky"
-      top="7rem"
-      maxW="23rem"
-      mx="auto"
-      sx={{
-        '@media (max-width: 1100px)': {
-          position: 'sticky',
-          top: '5rem',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginBottom: '1rem',
-        },
-        '@media (max-width: 768px)': {
-          position: 'static',
-          top: 0,
-          maxWidth: '17rem',
-          margin: 0,
-        },
-      }}
+      position={{ base: 'static', md: 'sticky', lg: 'sticky' }}
+      top={{ base: 0, md: '5rem', lg: '7rem' }}
+      maxW={{ base: '15rem', md: '23rem' }}
+      mx={{ base: 0, md: 'auto' }}
+      mb={{ base: 0, md: '1rem' }}
     >
       <Box
         bg="white"
         borderRadius="1.25rem"
-        p="2rem"
+        p={{ base: '1.75rem', md: '2rem' }}
         position="relative"
         overflow="hidden"
+        _before={{
+          content: '""',
+          position: 'absolute',
+          top: { base: '-1.5rem', md: '-3rem' },
+          right: { base: '-1.5rem', md: '-3rem' },
+          w: { base: '80px', md: '150px' },
+          h: { base: '80px', md: '150px' },
+          border: 'dashed',
+          borderColor: blue,
+          borderWidth: { base: '3px', md: '5px' },
+          borderRadius: '50%',
+          pointerEvents: 'none',
+        }}
+        _after={{
+          content: '""',
+          position: 'absolute',
+          bottom: { base: '-1rem', md: '-2rem' },
+          left: { base: '-1rem', md: '-2rem' },
+          w: { base: '70px', md: '125px' },
+          h: { base: '70px', md: '125px' },
+          border: 'dashed',
+          borderColor: blue,
+          borderWidth: { base: '3px', md: '5px' },
+          borderRadius: '50%',
+          pointerEvents: 'none',
+        }}
       >
-        {/* Top-right dashed circle */}
-        <Box
-          aria-hidden="true"
-          position="absolute"
-          top="-3rem"
-          right="-3rem"
-          width="150px"
-          height="150px"
-          border="5px dashed rgba(137, 207, 240, 1)"
-          borderRadius="50%"
-          pointerEvents="none"
-          sx={{
-            '@media (max-width: 768px)': {
-              top: '-1.5rem',
-              right: '-1.5rem',
-              width: '80px',
-              height: '80px',
-              borderWidth: '3px',
-            },
-          }}
-        />
-        {/* Bottom-left dashed circle */}
-        <Box
-          aria-hidden="true"
-          position="absolute"
-          bottom="-2rem"
-          left="-2rem"
-          width="125px"
-          height="125px"
-          border="5px dashed rgba(137, 207, 240, 1)"
-          borderRadius="50%"
-          pointerEvents="none"
-          sx={{
-            '@media (max-width: 768px)': {
-              bottom: '-1rem',
-              left: '-1rem',
-              width: '70px',
-              height: '70px',
-              borderWidth: '3px',
-            },
-          }}
-        />
-
         <Box display="flex" justifyContent="center" mb="1.5rem">
           <Image
             src="https://cdna.artstation.com/p/assets/images/images/075/039/706/large/retratosanime-514.jpg?1713581850"
             alt="Profile"
-            w="16rem"
-            h="18rem"
+            w={{ base: '6.25rem', md: '16rem' }}
+            h={{ base: '6.25rem', md: '18rem' }}
             borderRadius="8px"
             objectFit="cover"
             transition="transform 0.3s ease"
-            sx={{
-              '@media (max-width: 768px)': {
-                width: '6.25rem',
-                height: '6.25rem',
-              },
-            }}
           />
         </Box>
 
         <Box textAlign="center" color="black">
           <Heading
             as="h2"
-            fontSize="1.75rem"
+            fontSize={{ base: '1.25rem', md: '1.75rem' }}
             fontWeight="900"
             mb="1rem"
-            color="black"
             lineHeight="1.2"
-            sx={{
-              '@media (max-width: 768px)': { fontSize: '1.25rem' },
-            }}
+            color="black"
           >
             Steven <br /> Acosta-Pliego
           </Heading>
 
           <Text
-            fontSize="1.125rem"
+            fontSize={{ base: '0.8125rem', md: '1.125rem' }}
             fontWeight="700"
             color="rgba(0, 0, 0, 0.5)"
-            mt="5rem"
-            sx={{
-              '@media (max-width: 768px)': {
-                fontSize: '0.8125rem',
-                mt: '2.5rem',
-              },
-            }}
+            mt={{ base: '2.5rem', md: '5rem' }}
           >
             A Software Engineer who has developed countless innovative solutions.
           </Text>
 
-          <HStack justify="center" gap="1rem" mt="1rem" sx={{ '@media (max-width: 768px)': { gap: '0.75rem' } }}>
+          <HStack justify="center" gap={{ base: '0.75rem', md: '1rem' }} mt="1rem">
             <Link
               href="https://github.com/sacostapliego"
               isExternal
-              color="rgba(137, 207, 240, 1)"
+              color={blue}
               textDecoration="none"
               p="0.5rem"
               borderRadius="0.75rem"
@@ -137,17 +93,17 @@ const Card = () => {
               display="flex"
               alignItems="center"
               justifyContent="center"
-              _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: 'rgba(137, 207, 240, 1)' }}
+              _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: blue }}
               _active={{ transform: 'scale(0.95)' }}
               aria-label="GitHub"
             >
-              <Box as={FaGithub} boxSize="2rem" sx={{ '@media (max-width: 768px)': { boxSize: '1.125rem' } }} />
+              <Box as={FaGithub} boxSize={{ base: '1.125rem', md: '2rem' }} />
             </Link>
 
             <Link
               href="https://linkedin.com/in/sacostapliego"
               isExternal
-              color="rgba(137, 207, 240, 1)"
+              color={blue}
               textDecoration="none"
               p="0.5rem"
               borderRadius="0.75rem"
@@ -155,11 +111,11 @@ const Card = () => {
               display="flex"
               alignItems="center"
               justifyContent="center"
-              _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: 'rgba(137, 207, 240, 1)' }}
+              _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: blue }}
               _active={{ transform: 'scale(0.95)' }}
               aria-label="LinkedIn"
             >
-              <Box as={FaLinkedin} boxSize="2rem" sx={{ '@media (max-width: 768px)': { boxSize: '1.125rem' } }} />
+              <Box as={FaLinkedin} boxSize={{ base: '1.125rem', md: '2rem' }} />
             </Link>
           </HStack>
         </Box>
