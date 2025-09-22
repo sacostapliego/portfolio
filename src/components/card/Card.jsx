@@ -1,7 +1,5 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { CiLinkedin } from "react-icons/ci";
-import { FiGithub } from "react-icons/fi";
 import './Card.css';
 
 const Card = () => {

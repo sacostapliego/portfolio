@@ -1,0 +1,46 @@
+.recent-projects {
+  margin-top: 6rem;           /* space after the intro */
+}
+
+.recent-projects .section-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: rgba(255,255,255,0.9);
+  margin: 0 0 1.5rem 0;
+}
+
+/* simple grid for cards */
+.projects-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+/* card look aligned with your info boxes */
+.project-card {
+  background: rgba(25, 25, 25, 0.8);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  min-height: 8rem;
+  box-sizing: border-box;
+  color: rgba(255,255,255,0.85);
+}
+.project-title { margin: 0 0 0.35rem 0; color: #fff; font-weight: 800; }
+
+/* reveal on scroll (uses @keyframes fade-in-up from App.css) */
+.reveal { opacity: 0; transform: translateY(18px); }
+.reveal.is-visible { animation: fade-in-up 650ms cubic-bezier(.2,.65,.3,1) both; }
+
+/* stagger child cards when section becomes visible */
+.projects-grid > * { opacity: 0; transform: translateY(18px); }
+.reveal.is-visible .projects-grid > * {
+  animation: fade-in-up 650ms cubic-bezier(.2,.65,.3,1) both;
+}
+.reveal.is-visible .projects-grid > *:nth-child(1) { animation-delay: 80ms; }
+.reveal.is-visible .projects-grid > *:nth-child(2) { animation-delay: 160ms; }
+.reveal.is-visible .projects-grid > *:nth-child(3) { animation-delay: 240ms; }
+.reveal.is-visible .projects-grid > *:nth-child(4) { animation-delay: 320ms; }
+
+@media (max-width: 1100px) {
+  .recent-projects { margin-top: 4rem; }
+}
