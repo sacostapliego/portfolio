@@ -4,7 +4,6 @@ import './styles/InfoBoxes.css'
 import { IoMdSchool } from "react-icons/io";
 import { GiStarsStack } from "react-icons/gi";
 
-
 const HomeContent = () => {
   return (
     <div className="home-content">
@@ -13,6 +12,8 @@ const HomeContent = () => {
         Hi, my name is Steven. I am a self-taught developer, 
         and currently pursuing a Bachelor's degree in Computer Science at Georgia State University.
       </p>
+
+      {/* stats strip //TODO: Figure out what to add here */}
 
       <div className="info-boxes-container">
         {/* Box 1 */}
@@ -48,7 +49,6 @@ const HomeContent = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

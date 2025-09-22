@@ -11,16 +11,60 @@
 }
 
 .sub-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 2rem;
   margin-top: 0;
   width: auto;
-  max-width: 35ch;
+  max-width: 35rem;
   align-self: flex-start;
   margin-right: auto;
 }
+
+/* stats strip */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 3rem 0 2rem;
+}
+
+.stat-number {
+  color: #fff;
+  font-weight: 900;
+  line-height: 1;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+.stat-label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75rem 0;
+}
+.chip {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
 
 @media (max-width: 768px) {
   .home-content h1.main-heading {
