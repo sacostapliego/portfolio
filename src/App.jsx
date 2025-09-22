@@ -4,13 +4,13 @@ import viteLogo from '/vite.svg'
 import Header from './components/Header'
 import Card from './components/Card'
 import './App.css'
-import HomeContent from './components/HomeContent'
+import HomeContent from './components/home-content/HomeContent'
 
 function App() {
   return (
     <>
       <Header />
-      <div className="App">
+      <div className="App fade-in">
         <Card />
         <div className="main-content">
           <HomeContent />
