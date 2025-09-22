@@ -65,6 +65,12 @@
   letter-spacing: .01em;
 }
 
+@media (max-width: 1500px) {
+  .home-content h1.main-heading {
+  font-size: 5rem !important;
+}
+}
+
 
 @media (max-width: 768px) {
   .home-content h1.main-heading {

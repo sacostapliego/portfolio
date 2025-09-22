@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <div className="App fade-in">
-        <div>
+        <div className="left-column">
           <Card />
         </div>
         <div className="main-content">

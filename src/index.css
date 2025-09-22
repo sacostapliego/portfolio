@@ -31,7 +31,6 @@ body {
   display: block;
   place-items: center;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 h1 {
