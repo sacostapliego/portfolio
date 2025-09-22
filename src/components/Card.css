@@ -111,14 +111,14 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .user-card {
-    position: relative;
+    position: center;
     top: 0;
-    margin-bottom: 1.875rem;
-    max-width: 16rem;
+    max-width: 17rem;
+    margin: 0;
   }
   
   .user-card-content {
-    padding: 1.25rem;
+    padding: 1.75rem;
   }
 
   .user-card-content::before {
