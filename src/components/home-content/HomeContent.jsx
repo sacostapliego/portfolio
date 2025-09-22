@@ -15,6 +15,8 @@ const HomeContent = () => {
 
       {/* stats strip //TODO: Figure out what to add here */}
 
+      <br /><br /><br /><br /><br /><br />
+
       <div className="info-boxes-container">
         {/* Box 1 */}
         <div className="info-box one icon">
