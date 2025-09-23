@@ -14,7 +14,7 @@ function App() {
       <Flex
         className="fade-in"
         direction={{ base: 'column', lg: 'row' }}
-        align="stretch"
+        align={{ base: 'center', lg: 'stretch' }}
         gap={{ base: '1.25rem', lg: '2.5rem' }}
         w={{ base: '100vw', lg: '85vw' }}
         maxW={{ base: '100vw', lg: '90vw', '2xl': '95vw' }}
@@ -31,8 +31,7 @@ function App() {
           <Card />
         </Box>
 
-        {/* Main content box — apply heading / paragraph styles via Chakra's sx prop
-            so child components (HomeContent, RecentProjects) inherit the styles. */}
+        {/* Main content box */}
         <Box
           minW={0}
           pl={{ base: 0, lg: '1rem' }}

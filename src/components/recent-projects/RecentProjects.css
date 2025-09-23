@@ -3,7 +3,7 @@
 }
 
 .recent-projects .section-heading {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 900;
   color: rgba(255,255,255,0.9);
   margin: 0 0 1.5rem 0;

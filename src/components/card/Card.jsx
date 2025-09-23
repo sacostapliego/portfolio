@@ -19,8 +19,8 @@ const Card = () => {
         borderRadius="1.25rem"
         p={{ base: '1.75rem', md: '2rem' }}
         overflow="hidden"
-        position={{ base: 'relative', md: 'sticky' }} /* sticky on the visible card */
-        top={{ base: 0, md: '5rem', lg: '7rem' }}      /* required for sticky */
+        position={{ base: 'relative', md: 'sticky' }}
+        top={{ base: 0, md: '5rem', lg: '7rem' }}
         zIndex={2}
         _before={{
           content: '""',
@@ -90,12 +90,10 @@ const Card = () => {
               textDecoration="none"
               p="0.5rem"
               borderRadius="0.75rem"
-              transition="all 0.2s ease"
               display="flex"
               alignItems="center"
               justifyContent="center"
               _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: blue }}
-              _active={{ transform: 'scale(0.95)' }}
               aria-label="GitHub"
             >
               <Box as={FaGithub} boxSize={{ base: '1.125rem', md: '2rem' }} />
@@ -108,12 +106,10 @@ const Card = () => {
               textDecoration="none"
               p="0.5rem"
               borderRadius="0.75rem"
-              transition="all 0.2s ease"
               display="flex"
               alignItems="center"
               justifyContent="center"
               _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: blue }}
-              _active={{ transform: 'scale(0.95)' }}
               aria-label="LinkedIn"
             >
               <Box as={FaLinkedin} boxSize={{ base: '1.125rem', md: '2rem' }} />

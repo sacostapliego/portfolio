@@ -24,7 +24,7 @@ const RecentProjects = () => {
 
   return (
     <section id="projects" ref={sectionRef} className="recent-projects reveal">
-      <h2 className="section-heading">RECENT PROJECTS</h2>
+      <h2 className="section-heading">RECENT <br /> PROJECTS</h2>
 
       <div className="projects-grid">
         <article className="project-card">
