@@ -26,7 +26,6 @@ function App() {
       >
         <Box
           flex={{ base: 'none', lg: '0 1 38%' }}
-          alignSelf={{ base: 'auto', lg: 'flex-start' }}
           mb={{ base: '1rem', lg: '0' }}
         >
           <Card />

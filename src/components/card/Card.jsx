@@ -8,19 +8,20 @@ const Card = () => {
   return (
     <Box
       as="section"
-      height="fit-content"
-      position={{ base: 'static', md: 'sticky', lg: 'sticky' }}
-      top={{ base: 0, md: '5rem', lg: '7rem' }}
       maxW={{ base: '15rem', md: '23rem' }}
       mx={{ base: 0, md: 'auto' }}
       mb={{ base: 0, md: '1rem' }}
+      display="block"
+      height={{ base: 'auto', md: '100%' }}
     >
       <Box
         bg="white"
         borderRadius="1.25rem"
         p={{ base: '1.75rem', md: '2rem' }}
-        position="relative"
         overflow="hidden"
+        position={{ base: 'relative', md: 'sticky' }} /* sticky on the visible card */
+        top={{ base: 0, md: '5rem', lg: '7rem' }}      /* required for sticky */
+        zIndex={2}
         _before={{
           content: '""',
           position: 'absolute',
