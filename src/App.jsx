@@ -1,8 +1,8 @@
 import { Box, Flex } from '@chakra-ui/react';
-import Header from './components/header/Header';
-import Card from './components/card/Card';
-import HomeContent from './components/home-content/HomeContent';
-import RecentProjects from './components/recent-projects/RecentProjects';
+import Header from './components/Header';
+import Card from './components/Card';
+import HomeContent from './components/HomeContent';
+import RecentProjects from './components/RecentProjects';
 import './App.css';
 
 function App() {

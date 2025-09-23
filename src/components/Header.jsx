@@ -3,7 +3,7 @@ import { Box, HStack } from '@chakra-ui/react';
 import { LuHouse } from 'react-icons/lu';
 import { FaRegFolder, FaCode } from 'react-icons/fa6';
 import { IoDocumentTextOutline } from 'react-icons/io5';
-import { Tooltip } from "../ui/tooltip"
+import { Tooltip } from "./ui/tooltip"
 import NavButton from './NavButton';
 
 const Header = () => {
