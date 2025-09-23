@@ -16,7 +16,6 @@ const NavButton = ({ label, icon: Icon }) => {
       css: {
         '--tooltip-bg': 'rgba(25, 25, 25, 0.95)',
         borderRadius: '8px',
-        backdropFilter: 'blur(10px)',
         fontSize: '0.75rem',
         fontWeight: 500,
         color: 'white',
