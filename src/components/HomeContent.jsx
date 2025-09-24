@@ -21,9 +21,10 @@ const HomeContent = () => {
         lineHeight="1.05"
         fontSize={{ base: '2.5rem', md: '5rem', xl: '6rem' }}
         mb={{ base: 4, md: 2 }}
+
       >
         <Text color="white" display="block">STEVEN</Text>
-        <Text color="rgba(255,255,255,0.6)" display="block">ACOSTA-PLIEGO</Text>
+        <Text color="rgba(255,255,255,0.3)" display="block">ACOSTA-PLIEGO</Text>
       </Heading>
 
       <Text

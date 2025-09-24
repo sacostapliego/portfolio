@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Card from './components/Card';
 import HomeContent from './components/HomeContent';
 import RecentProjects from './components/RecentProjects';
-import './App.css';
+import Skills from './components/Skills';
+import './components/animations/fade.css';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         pb="2.5rem"
         mx="auto"
         boxSizing="border-box"
+        mt={{ base: '0.5rem', md: '2rem' }}
       >
         <Box
           flex={{ base: 'none', lg: '0 1 38%' }}
@@ -58,6 +60,7 @@ function App() {
         >
           <HomeContent />
           <RecentProjects />
+          <Skills />
         </Box>
       </Flex>
     </>
