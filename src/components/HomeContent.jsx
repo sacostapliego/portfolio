@@ -19,7 +19,7 @@ const HomeContent = () => {
         as="h1"
         fontWeight="900"
         lineHeight="1.05"
-        fontSize={{ base: '2.5rem', md: '5rem', xl: '6rem' }}
+        fontSize={{ base: '2.5rem', md: '5rem', xl: '5rem' }}
         mb={{ base: 4, md: 2 }}
 
       >
