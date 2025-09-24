@@ -18,7 +18,10 @@ const ProjectGrid = () => {
           isExternal
           target='_blank'
           _hover={{ textDecoration: 'none' }}
-          _focus={{ boxShadow: 'none' }}
+          _focus={{ boxShadow: 'none', outline: 'none' }}
+          _focusVisible={{ boxShadow: 'none', outline: 'none' }}
+          _active={{ boxShadow: 'none', outline: 'none' }}
+          sx={{ WebkitTapHighlightColor: 'transparent' }}
         >
           <Box
             bg="rgba(25, 25, 25, 0.8)"
