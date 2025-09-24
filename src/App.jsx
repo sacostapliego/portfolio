@@ -17,7 +17,7 @@ function App() {
         align={{ base: 'center', lg: 'stretch' }}
         gap={{ base: '1.25rem', lg: '2.5rem' }}
         w={{ base: '100vw', lg: '100vw', '2xl': '85vw'  }}
-        maxW={{ base: '100vw', lg: '95%', '2xl': '95vw' }}
+        maxW={{ base: '100vw', lg: '95%', '2xl': '85vw' }}
         px={{ base: '1.25rem', lg: '2.5rem' }}
         pt={{ base: '6.25rem', lg: '9rem' }}
         pb="2.5rem"
@@ -26,7 +26,7 @@ function App() {
         mt={{ base: '0.5rem', md: '2rem' }}
       >
         <Box
-          flex={{ base: 'none', lg: '0 1 40%' }}
+          flex={{ base: 'none', lg: '0 1 35%', '2xl': '0 1 40%' }}
           mb={{ base: '1rem', lg: '0' }}
         >
           <Card />
