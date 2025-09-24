@@ -52,7 +52,7 @@ const Skills = () => {
         alignItems="center"
         justifyItems="center"
         gapX={0}
-        gapY={4}
+        gapY={{lg: 6, '2xl': 4}}               /* mobile gap: 1rem (4) */
         w={'100%'}
       >
         {items.map((_, idx) => (
@@ -62,7 +62,7 @@ const Skills = () => {
             display="flex"
             alignItems="center"
             justifyContent="center"
-            h={{ base: '4.5rem', md: '5.5rem', lg: '6rem' }}
+            h={{ base: '4.5rem', md: '5.5rem', lg: 'rem', '2xl': '6rem' }}
             transition="transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease"
             _hover={{
               bg: 'rgba(25,25,25,0.95)',

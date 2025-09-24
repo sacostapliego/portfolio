@@ -19,6 +19,7 @@ const ProjectCard = ({ title, desc, href, image }) => {
     <Link
       href={href}
       isExternal
+      target="_blank"
       aria-label={`Open ${title} externally`}
       display="block"
       _hover={{ textDecoration: 'none' }}

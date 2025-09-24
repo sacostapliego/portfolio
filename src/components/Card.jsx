@@ -93,24 +93,26 @@ const Card = () => {
               display="flex"
               alignItems="center"
               justifyContent="center"
-              _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: blue }}
+              transition="transform 0.25s ease, background-color 0.25s ease, color 0.25s ease"  // added
+              _hover={{ bg: 'rgba(255, 255, 255, 0.75)', transform: 'scale(1.18)', color: blue }}
               aria-label="GitHub"
             >
               <Box as={FaGithub} boxSize={{ base: '1.125rem', md: '2rem' }} />
             </Link>
 
             <Link
-              href="https://linkedin.com/in/sacostapliego"
+              href="https://github.com/sacostapliego"
               isExternal
               color={blue}
               textDecoration="none"
-              p="0.5rem"
+              p="0.1rem"
               borderRadius="0.75rem"
               display="flex"
               alignItems="center"
               justifyContent="center"
-              _hover={{ bg: 'rgba(255, 255, 255, 0.1)', transform: 'scale(1.05)', color: blue }}
-              aria-label="LinkedIn"
+              transition="transform 0.25s ease, background-color 0.25s ease, color 0.25s ease"  // added
+              _hover={{ bg: 'rgba(255, 255, 255, 0.75)', transform: 'scale(1.18)', color: blue }}
+              aria-label="GitHub"
             >
               <Box as={FaLinkedin} boxSize={{ base: '1.125rem', md: '2rem' }} />
             </Link>

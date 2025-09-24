@@ -3,7 +3,7 @@ import { Box, HStack } from '@chakra-ui/react';
 import { LuHouse } from 'react-icons/lu';
 import { FaRegFolder, FaCode } from 'react-icons/fa6';
 import { IoDocumentTextOutline } from 'react-icons/io5';
-import { Tooltip } from "./ui/tooltip"
+import { AiOutlineExperiment } from "react-icons/ai";
 import NavButton from './NavButton';
 
 const Header = () => {
@@ -31,6 +31,7 @@ const Header = () => {
         <NavButton label="Home" icon={LuHouse} />
         <NavButton label="Projects" icon={FaRegFolder} />
         <NavButton label="Skills" icon={FaCode} />
+        <NavButton label="Experiments" icon={AiOutlineExperiment} />
         <NavButton label="Resume" icon={IoDocumentTextOutline} />
       </HStack>
     </Box>

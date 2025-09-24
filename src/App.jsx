@@ -5,6 +5,7 @@ import HomeContent from './components/HomeContent';
 import RecentProjects from './components/RecentProjects';
 import Skills from './components/Skills';
 import './components/animations/fade.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         pb="2.5rem"
         mx="auto"
         boxSizing="border-box"
-        mt={{ base: '0.5rem', md: '2rem' }}
+        mt={{ base: '0.5rem', md: '2rem' ,lg: '-1rem', '2xl': '2rem'}}
       >
         <Box
           flex={{ base: 'none', lg: '0 1 35%', '2xl': '0 1 40%' }}
@@ -62,6 +63,7 @@ function App() {
           <Skills />
         </Box>
       </Flex>
+      <Footer />
     </>
   );
 }
