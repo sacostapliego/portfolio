@@ -15,7 +15,7 @@ const Card = () => {
       height={{ base: 'auto', md: '100%' }}
     >
       <Box
-        bg="white"
+        bg="rgba(251,247,245)"
         borderRadius="1.25rem"
         p={{ base: '1.75rem', md: '2rem' }}
         overflow="hidden"

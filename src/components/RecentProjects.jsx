@@ -47,7 +47,7 @@ const RecentProjects = () => {
         fontSize={{ base: '2.5rem', md: '3rem', lg: '4rem' }}
         mb={{ base: '1.5rem', md: '2rem' }}
       >
-        <Text color="white" display="block">RECENT</Text>
+        <Text color="rgba(251,247,245)" display="block">RECENT</Text>
         <Text color="rgba(255,255,255,0.3)" display="block">PROJECTS</Text>
       </Heading>
 

@@ -42,13 +42,13 @@ function App() {
           sx={{
             // h1: 2.5rem on large, 2rem on small
             'h1': {
-              color: 'white',
+              color: "rgba(251,247,245)",
               mb: '1.25rem',
               fontSize: { base: '2rem', lg: '2.5rem' },
             },
             // h2: 1.8rem on large, 1.5rem on small
             'h2': {
-              color: 'white',
+              color: "rgba(251,247,245)",
               fontSize: { base: '1.5rem', lg: '1.8rem' },
             },
             // p: color and spacing preserved

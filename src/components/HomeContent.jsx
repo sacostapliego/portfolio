@@ -23,7 +23,7 @@ const HomeContent = () => {
         mb={{ base: 4, md: 2 }}
 
       >
-        <Text color="white" display="block">STEVEN</Text>
+        <Text color="rgba(251,247,245)" display="block">STEVEN</Text>
         <Text color="rgba(255,255,255,0.3)" display="block">ACOSTA-PLIEGO</Text>
       </Heading>
 
@@ -62,7 +62,7 @@ const HomeContent = () => {
             right={{ base: '0.5rem', md: '-1rem' }}
             bottom={{ base: '0.1rem', md: '-1rem' }}
             fontSize={{ base: '7rem', md: '14rem' }}
-            color="white"
+            color="rgba(251,247,245)"
             opacity="0.12"
             pointerEvents="none"
             aria-hidden="true"
@@ -71,7 +71,7 @@ const HomeContent = () => {
           <Stack spacing={3} height="100%" align="flex-start">
             <Box width="100%">
               <Box
-                bg="white"
+                bg="rgba(251,247,245)"
                 borderRadius="0.5rem"
                 p="8px"
                 w={{ base: '3rem', md: '6rem' }}   /* mobile: 3rem */
@@ -87,7 +87,7 @@ const HomeContent = () => {
             </Box>
 
             <Box width="100%">
-              <Text fontSize={{ base: '1rem', md: '1.1rem' }} fontWeight="600" color="white">
+              <Text fontSize={{ base: '1rem', md: '1.1rem' }} fontWeight="600" color="rgba(251,247,245)">
                 GEORGIA STATE UNIVERSITY
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
@@ -114,7 +114,7 @@ const HomeContent = () => {
             right={{ base: '0.5rem', md: '-1rem' }}
             bottom={{ base: '0.1rem', md: '-1rem' }}
             fontSize={{ base: '7rem', md: '14rem' }}
-            color="white"
+            color="rgba(251,247,245)"
             opacity="0.12"
             pointerEvents="none"
             aria-hidden="true"
@@ -123,7 +123,7 @@ const HomeContent = () => {
           <Stack spacing={3} height="100%" align="flex-start">
             <Box width="100%">
               <Box
-                bg="white"
+                bg="rgba(251,247,245)"
                 borderRadius="0.5rem"
                 p="8px"
                 w={{ base: '3rem', md: '6rem' }}   /* mobile: 3rem */
@@ -139,7 +139,7 @@ const HomeContent = () => {
             </Box>
 
             <Box width="100%">
-              <Text fontSize={{ base: '1rem', md: '1.1rem' }} fontWeight="600" color="white">
+              <Text fontSize={{ base: '1rem', md: '1.1rem' }} fontWeight="600" color="rgba(251,247,245)">
                 PRESIDENT'S LIST
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">

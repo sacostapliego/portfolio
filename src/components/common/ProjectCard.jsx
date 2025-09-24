@@ -59,7 +59,7 @@ const ProjectCard = ({ title, desc, href, image }) => {
             w={{ base: '7.5rem', md: '8rem' }}
             borderRadius="0.5rem"
             overflow="hidden"
-            bg="white"
+            bg="rgba(251,247,245)"
             display="flex"
             alignItems="center"
             justifyContent="center"

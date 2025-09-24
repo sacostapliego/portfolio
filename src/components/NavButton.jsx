@@ -18,7 +18,7 @@ const NavButton = ({ label, icon: Icon }) => {
         borderRadius: '8px',
         fontSize: '0.75rem',
         fontWeight: 500,
-        color: 'white',
+        color: "rgba(251,247,245)",
       },
     }}
   >
