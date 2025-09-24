@@ -13,17 +13,17 @@ import { IoMdCode } from 'react-icons/io';
 
 const skillsData = [
   { imageSrc: '/images/skills/python.png', title: 'Python', subtitle: 'Backend/AI' },
-  { imageSrc: '/images/skills/python.png', title: 'JavaScript', subtitle: 'Frontend' },
-  { imageSrc: '/images/skills/python.png', title: 'TypeScript', subtitle: 'UI Frameworks' },
-  { imageSrc: '/images/skills/python.png', title: 'Java', subtitle: 'Server-Side' },
-  { imageSrc: '/images/skills/python.png', title: 'React', subtitle: 'Typed JS' },
+  { imageSrc: '/images/skills/python.png', title: 'JavaScript', subtitle: 'Frontend Web' },
+  { imageSrc: '/images/skills/python.png', title: 'TypeScript', subtitle: 'Frontend Web/Mobile' },
+  { imageSrc: '/images/skills/python.png', title: 'Java', subtitle: 'Backend' },
+  { imageSrc: '/images/skills/python.png', title: 'React', subtitle: 'Framework' },
   { imageSrc: '/images/skills/python.png', title: 'Node.js', subtitle: 'Full-Stack' },
   { imageSrc: '/images/skills/python.png', title: 'Chakra UI', subtitle: 'Styling' },
-  { imageSrc: '/images/skills/python.png', title: 'PostgreSQL', subtitle: 'SQL/NoSQL' },
-  { imageSrc: '/images/skills/python.png', title: 'MongoDB', subtitle: 'Version Control' },
-  { imageSrc: '/images/skills/python.png', title: 'Git', subtitle: 'AWS/Azure' },
-  { imageSrc: '/images/skills/python.png', title: 'AWS', subtitle: 'Cybersecurity' },
-  { imageSrc: '/images/skills/python.png', title: 'Supabase', subtitle: 'REST/GraphQL' },
+  { imageSrc: '/images/skills/python.png', title: 'PostgreSQL', subtitle: 'Database' },
+  { imageSrc: '/images/skills/python.png', title: 'MongoDB', subtitle: 'Database' },
+  { imageSrc: '/images/skills/python.png', title: 'Git', subtitle: 'Version Control' },
+  { imageSrc: '/images/skills/python.png', title: 'AWS', subtitle: 'Cloud' },
+  { imageSrc: '/images/skills/python.png', title: 'Supabase', subtitle: 'Database' },
 ];
 
 export default skillsData;

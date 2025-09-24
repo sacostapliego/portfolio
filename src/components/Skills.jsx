@@ -59,6 +59,7 @@ const Skills = () => {
             flexDirection={{ base: "column", md: "row" }}
             alignItems="center"
             justifyContent="flex-start" 
+            w={'100%'}
             h="6rem"
             transition="transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease"
             _hover={{
@@ -71,15 +72,15 @@ const Skills = () => {
             <Image
               src={skill.imageSrc}
               alt={skill.title}
-              boxSize="4.5rem"
+              boxSize="4rem"
               borderRadius="full"
               mr={4}
             />
             <VStack align="center" spacing={0}>
-              <Text fontSize={{base:"1.25rem", lg:'1rem', '2xl':"1.2.5rem"}} fontWeight="bold" color="white">
+              <Text w="full" fontSize={{base:"1.25rem", lg:'1rem', '2xl':"1.2.5rem"}} fontWeight="bold" color="white">
                 {skill.title}
               </Text>
-              <Text fontSize={{ base: "0rem", md: "0.875rem" }} fontWeight="light" color="rgba(255,255,255,0.7)">
+              <Text w="full" fontSize={{ base: "0rem", md: "0.875rem" }} fontWeight="light" color="rgba(255,255,255,0.7)">
                 {skill.subtitle}
               </Text>
             </VStack>
