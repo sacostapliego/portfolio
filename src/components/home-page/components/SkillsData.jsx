@@ -1,10 +1,3 @@
-import { DiPython } from 'react-icons/di';
-import { FaJs, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiGit } from 'react-icons/si';
-import { AiOutlineCloud } from 'react-icons/ai';
-import { MdSecurity } from 'react-icons/md';
-import { IoMdCode } from 'react-icons/io';
-
 // Programming Languages: Python, JavaScript, TypeScript, Java
 // Frameworks: React, React Native, Node.js,  
 // Libraries: Chakra UI,

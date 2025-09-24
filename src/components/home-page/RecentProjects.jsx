@@ -6,7 +6,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import '../animations/reveal.css'
-import ProjectCard from '../common/ProjectCard';
+import ProjectCard from './components/ProjectCard';
 import cardinalLandingPage from '../assets/images/cardinal-landing.png'
 
 const RecentProjects = () => {

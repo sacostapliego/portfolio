@@ -6,7 +6,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import '../animations/reveal.css';
-import AboutCard from '../common/AboutCard';
+import AboutCard from './components/AboutCard'
 
 const About = () => {
   const sectionRef = useRef(null);
