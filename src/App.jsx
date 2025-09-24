@@ -6,6 +6,7 @@ import RecentProjects from './components/RecentProjects';
 import Skills from './components/Skills';
 import './components/animations/fade.css';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
           <HomeContent />
           <RecentProjects />
           <Skills />
+          <About />
         </Box>
       </Flex>
       <Footer />

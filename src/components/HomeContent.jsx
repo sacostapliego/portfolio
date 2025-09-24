@@ -28,7 +28,7 @@ const HomeContent = () => {
       </Heading>
 
       <Text
-        fontSize={{ base: '1.25rem', md: '1.5rem' }}
+        fontSize={{ base: '1.25rem', md: '1.5rem', lg: '1.2rem', '2xl': '1.5rem' }}
         fontWeight="400"
         color="rgba(255,255,255,0.5)"
         maxW={{ base: '100%', md: '35rem' }}
