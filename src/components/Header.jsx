@@ -4,7 +4,7 @@ import { LuHouse } from 'react-icons/lu';
 import { FaRegFolder, FaCode } from 'react-icons/fa6';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { AiOutlineExperiment } from "react-icons/ai";
-import NavButton from './NavButton';
+import NavButton from './common/NavButton';
 
 const Header = () => {
   return (
@@ -30,7 +30,7 @@ const Header = () => {
       >
         <NavButton label="Home" icon={LuHouse} to="/" />
         <NavButton label="Projects" icon={FaRegFolder} to="/projects" />
-        <NavButton label="Skills" icon={FaCode} to="/" />
+        <NavButton label="Skills" icon={FaCode} to="/skills" />
         <NavButton label="Experiments" icon={AiOutlineExperiment} to="/" />
         <NavButton label="Resume" icon={IoDocumentTextOutline} to="/" />
       </HStack>

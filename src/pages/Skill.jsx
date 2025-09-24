@@ -1,34 +1,25 @@
 import { Box, Flex } from '@chakra-ui/react';
 import Card from '../components/home-page/Card';
-import HomeContent from '../components/home-page/HomeContent';
-import RecentProjects from '../components/home-page/RecentProjects';
 import Skills from '../components/home-page/Skills';
 import '../components/animations/fade.css';
-import About from '../components/home-page/About';
 
-function HomePage() {
+function Skill() {
   return (
     <>
       <Flex
         className="fade-in"
-        direction={{ base: 'column', lg: 'row' }}
-        align={{ base: 'center', lg: 'stretch' }}
+        direction={{ base: 'column', lg: 'column' }}
+        align={{ base: 'center', lg: 'center' }}
         gap={{ base: '1.25rem', lg: '2.5rem' }}
         w={{ base: '100%', lg: '100vw', '2xl': '85vw'  }}
         maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
         px={{ base: '1rem', lg: '2.5rem' }}
-        pt={{ base: '6.25rem', lg: '9rem' }}
+        pt={{ base: '6.25rem', lg: '5rem' }}
         pb="2.5rem"
         mx="auto"
         boxSizing="border-box"
         mt={{ base: '0.5rem', md: '2rem' ,lg: '-1rem', '2xl': '2rem'}}
       >
-        <Box
-          flex={{ base: 'none', lg: '0 1 35%', '2xl': '0 1 40%' }}
-          mb={{ base: '1rem', lg: '0' }}
-        >
-          <Card />
-        </Box>
 
         {/* Main content box */}
         <Box
@@ -55,14 +46,11 @@ function HomePage() {
             },
           }}
         >
-          <HomeContent />
-          <RecentProjects />
           <Skills />
-          <About />
         </Box>
       </Flex>
     </>
   );
 }
 
-export default HomePage;
+export default Skill;

@@ -36,6 +36,7 @@ const About = () => {
       ref={sectionRef}
       className="reveal"
       mt={{ base: '4rem', md: '6rem' }}
+      mb={{ base: '2rem', md: '4rem' }}
     >
       <Heading
         as="h1"

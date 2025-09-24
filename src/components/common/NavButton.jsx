@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
-import { Tooltip } from "./ui/tooltip"
+import { Tooltip } from "../ui/tooltip"
 import { Link } from 'react-router-dom';
 
 
