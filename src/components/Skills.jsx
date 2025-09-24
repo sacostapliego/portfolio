@@ -66,18 +66,20 @@ const Skills = () => {
               bg: 'rgba(25,25,25,0.95)',
             }}
             aria-hidden="true"
-            padding={4}
             cursor="default"
+            p={{ base: 2, md: 4 }}
           >
             <Image
               src={skill.imageSrc}
               alt={skill.title}
               boxSize="4rem"
-              borderRadius="full"
+              background={'white'}
+              borderRadius="0.5rem"
+              padding={'0.5rem'}
               mr={4}
             />
-            <VStack align="center" spacing={0}>
-              <Text w="full" fontSize={{base:"1.25rem", lg:'1rem', '2xl':"1.2.5rem"}} fontWeight="bold" color="rgba(251,247,245)">
+            <VStack align="center" gap={0}>
+              <Text w="full" fontSize={{base:"1.25rem", lg:'1.25rem', '2xl':"1.5rem"}} fontWeight="bolder" color="rgba(251,247,245)">
                 {skill.title}
               </Text>
               <Text w="full" fontSize={{ base: "0rem", md: "0.875rem" }} fontWeight="light" color="rgba(255,255,255,0.7)">
