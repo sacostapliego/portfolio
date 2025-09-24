@@ -68,12 +68,13 @@ const Skills = () => {
               bg: 'rgba(25,25,25,0.95)',
             }}
             aria-hidden="true"
-            padding={3}
+            padding={4}
+            cursor="default"
           >
             <Icon as={DiPython} boxSize={{ base: '4.5rem', md: '5.5rem', lg: '5rem' }} color="black" background={'white'} borderRadius="0.75rem"/>
             <VStack paddingX={4} align="flex-start" gap={'0.125rem'}>
               <Text fontSize={{ base: '1.25rem', md: '1.5rem' }} fontWeight="bold">Python</Text>
-              <Text fontSize={{ base: '1.25rem', md: '1.15rem' }} fontWeight={'light'} color="rgba(255,255,255,0.7)">Programming</Text>
+              <Text fontSize={{ base: '1.25rem', md: '1.15rem' }} fontWeight={'light'} color="rgba(255,255,255,0.7)">Backend/AI</Text>
             </VStack>
           </Box>
         ))}

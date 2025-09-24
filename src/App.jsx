@@ -11,7 +11,6 @@ function App() {
     <>
       <Header />
 
-      {/* Layout + animation wrapper (animations kept in App.css) */}
       <Flex
         className="fade-in"
         direction={{ base: 'column', lg: 'row' }}
@@ -27,7 +26,7 @@ function App() {
         mt={{ base: '0.5rem', md: '2rem' }}
       >
         <Box
-          flex={{ base: 'none', lg: '0 1 38%' }}
+          flex={{ base: 'none', lg: '0 1 40%' }}
           mb={{ base: '1rem', lg: '0' }}
         >
           <Card />

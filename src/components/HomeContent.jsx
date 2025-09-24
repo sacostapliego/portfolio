@@ -91,7 +91,7 @@ const HomeContent = () => {
                 GEORGIA STATE UNIVERSITY
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
-                BACHELOR OF SCIENCE IN COMPUTER SCIENCE
+                B.S. IN COMPUTER SCIENCE
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
                 GPA: 3.78/4.0; HONORS
