@@ -1,9 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { Box, SimpleGrid, Heading, Text, Icon, VStack } from '@chakra-ui/react';
-import { DiPython } from 'react-icons/di';
+import { Box, SimpleGrid, Heading, Text, VStack, Image, Icon } from '@chakra-ui/react';
 import './animations/reveal.css';
-
-const PLACEHOLDER = 'https://i.sstatic.net/9AF6f.png';
+import skillsData from './common/SkillsData'; // Import the skills data
 
 const Skills = () => {
   const sectionRef = useRef(null);
@@ -26,8 +24,6 @@ const Skills = () => {
     return () => io.disconnect();
   }, []);
 
-  const items = Array.from({ length: 12 });
-
   return (
     <Box
       as="section"
@@ -48,21 +44,21 @@ const Skills = () => {
       </Heading>
 
       <SimpleGrid
-        columns={{ base: 2, md: 3, lg: 3 }} /* mobile: 2 cols (2x6), desktop: 3 cols (3x4) */
+        columns={{ base: 2, md: 3, lg: 3 }}
         alignItems="center"
         justifyItems="center"
-        gapX={0}
-        gapY={{lg: 6, '2xl': 4}}               /* mobile gap: 1rem (4) */
-        w={'100%'}
+        gap={6}
+        w="100%"
       >
-        {items.map((_, idx) => (
+        {skillsData.map((skill, idx) => (
           <Box
             key={idx}
             borderRadius="0.75rem"
             display="flex"
+            flexDirection={{ base: "column", md: "row" }}
             alignItems="center"
-            justifyContent="center"
-            h={{ base: '4.5rem', md: '5.5rem', lg: 'rem', '2xl': '6rem' }}
+            justifyContent="flex-start" 
+            h="6rem"
             transition="transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease"
             _hover={{
               bg: 'rgba(25,25,25,0.95)',
@@ -71,10 +67,20 @@ const Skills = () => {
             padding={4}
             cursor="default"
           >
-            <Icon as={DiPython} boxSize={{ base: '4.5rem', md: '5.5rem', lg: '5rem' }} color="black" background={'white'} borderRadius="0.75rem"/>
-            <VStack paddingX={4} align="flex-start" gap={'0.125rem'}>
-              <Text fontSize={{ base: '1.25rem', md: '1.5rem' }} fontWeight="bold">Python</Text>
-              <Text fontSize={{ base: '1.25rem', md: '1.15rem' }} fontWeight={'light'} color="rgba(255,255,255,0.7)">Backend/AI</Text>
+            <Image
+              src={skill.imageSrc}
+              alt={skill.title}
+              boxSize="4.5rem"
+              borderRadius="full"
+              mr={4}
+            />
+            <VStack align="center" spacing={0}>
+              <Text fontSize={{base:"1.25rem", lg:'1rem', '2xl':"1.2.5rem"}} fontWeight="bold" color="white">
+                {skill.title}
+              </Text>
+              <Text fontSize={{ base: "0rem", md: "0.875rem" }} fontWeight="light" color="rgba(255,255,255,0.7)">
+                {skill.subtitle}
+              </Text>
             </VStack>
           </Box>
         ))}
