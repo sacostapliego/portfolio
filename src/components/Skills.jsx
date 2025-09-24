@@ -47,7 +47,8 @@ const Skills = () => {
         columns={{ base: 2, md: 3, lg: 3 }}
         alignItems="center"
         justifyItems="center"
-        gap={6}
+        gapX={6}
+        gapY={{base: 10, md: 6}}
         w="100%"
       >
         {skillsData.map((skill, idx) => (

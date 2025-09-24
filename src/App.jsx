@@ -18,9 +18,9 @@ function App() {
         direction={{ base: 'column', lg: 'row' }}
         align={{ base: 'center', lg: 'stretch' }}
         gap={{ base: '1.25rem', lg: '2.5rem' }}
-        w={{ base: '100vw', lg: '100vw', '2xl': '85vw'  }}
-        maxW={{ base: '100vw', lg: '95%', '2xl': '85vw' }}
-        px={{ base: '1.25rem', lg: '2.5rem' }}
+        w={{ base: '100%', lg: '100vw', '2xl': '85vw'  }}
+        maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
+        px={{ base: '1rem', lg: '2.5rem' }}
         pt={{ base: '6.25rem', lg: '9rem' }}
         pb="2.5rem"
         mx="auto"
