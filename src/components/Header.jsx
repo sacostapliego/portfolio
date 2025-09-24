@@ -28,11 +28,11 @@ const Header = () => {
         minW={{ base: '180px', md: '200px' }}
         justify="center"
       >
-        <NavButton label="Home" icon={LuHouse} />
-        <NavButton label="Projects" icon={FaRegFolder} />
-        <NavButton label="Skills" icon={FaCode} />
-        <NavButton label="Experiments" icon={AiOutlineExperiment} />
-        <NavButton label="Resume" icon={IoDocumentTextOutline} />
+        <NavButton label="Home" icon={LuHouse} to="/" />
+        <NavButton label="Projects" icon={FaRegFolder} to="/projects" />
+        <NavButton label="Skills" icon={FaCode} to="/" />
+        <NavButton label="Experiments" icon={AiOutlineExperiment} to="/" />
+        <NavButton label="Resume" icon={IoDocumentTextOutline} to="/" />
       </HStack>
     </Box>
   );
