@@ -7,7 +7,11 @@ import {
 } from '@chakra-ui/react';
 import '../animations/reveal.css'
 import ProjectCard from './components/ProjectCard';
-import cardinalLandingPage from '../assets/images/cardinal-landing.png'
+
+import cardinalAppImage from '../assets/projects/recent/cardinal.png'
+import cardinalLandingImage from '../assets/projects/recent/cardinal-landing.png'
+import portfolioImage from '../assets/projects/full/portfolio-full.png'
+
 
 const RecentProjects = () => {
   const sectionRef = useRef(null);
@@ -56,19 +60,19 @@ const RecentProjects = () => {
           desc="Full stack web and mobile application to manage and share wishlists, 
           built with React, React Native, Expo, s3, Supabase Auth and fastAPI."
           href="https://cardinal-wishlist.onrender.com/"
-          image={cardinalLandingPage}
+          image={cardinalAppImage}
         />
         <ProjectCard
           title="Cardinal Wishlist Landing Page"
           desc="Landing page for the Cardinal Wishlist application, showcasing features and benefits."
           href="https://cardinal-wishlist.vercel.app/"
-          image={cardinalLandingPage}
+          image={cardinalLandingImage}
         />
         <ProjectCard
           title="Portfolio"
           desc="Showcasing my work and skills as a computer science student."
           href="#"
-          image={cardinalLandingPage}
+          image={portfolioImage}
         />
       </Stack>
 

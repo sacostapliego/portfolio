@@ -24,7 +24,6 @@ const ProjectGrid = () => {
           sx={{ WebkitTapHighlightColor: 'transparent' }}
         >
           <Box
-            bg="rgba(25, 25, 25, 0.8)"
             borderRadius="1rem"
             p={4}
             transition="transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease"
