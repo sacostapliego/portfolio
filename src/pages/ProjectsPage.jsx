@@ -9,7 +9,7 @@ function ProjectsPage() {
     {/* Fade in animation + page setup */}
       <Flex
         className="fade-in"
-        w={{ base: '100%', lg: '100vw', '2xl': '70vw'  }}
+        w={{ base: '100%', lg: '85vw', '2xl': '70vw'  }}
         maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
         px={{ base: '1rem', lg: '2.5rem' }}
         pt={{ base: '4rem', lg: '5rem' }}

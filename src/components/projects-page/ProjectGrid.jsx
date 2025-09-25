@@ -50,7 +50,7 @@ const ProjectGrid = () => {
                 <Heading as="h3" fontSize="lg" color="white" fontWeight="bold">
                   {project.title}
                 </Heading>
-                <Icon as={LuArrowUpRight} boxSize={5} color="teal.200" />
+                <Icon as={LuArrowUpRight} boxSize={5} color="white" />
               </HStack>
 
               {/* Tags/Chips */}
