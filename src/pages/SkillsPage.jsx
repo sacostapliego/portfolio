@@ -3,7 +3,7 @@ import Card from '../components/home-page/Card';
 import Skills from '../components/home-page/Skills';
 import '../components/animations/fade.css';
 
-function Skill() {
+function SkillsPage() {
   return (
     <>
       <Flex
@@ -53,4 +53,4 @@ function Skill() {
   );
 }
 
-export default Skill;
+export default SkillsPage;

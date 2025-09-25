@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Box, SimpleGrid, Heading, Text, VStack, Image, Icon } from '@chakra-ui/react';
 import '../animations/reveal.css'
-import skillsData from '../common/SkillsData'; // Import the skills data
+import skillsData from './components/SkillsData';
 
 const Skills = () => {
   const sectionRef = useRef(null);

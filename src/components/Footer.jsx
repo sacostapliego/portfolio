@@ -1,4 +1,4 @@
-import { Box, HStack, VisuallyHidden } from '@chakra-ui/react';
+import { Box, HStack } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from "react-icons/io";
 
@@ -8,7 +8,8 @@ export default function Footer() {
       as="footer"
       mt={16}
       w="100%"
-      background="linear-gradient(to bottom, #141414, #1d1d1d)"
+      minW={"100%"}
+      background="linear-gradient(to bottom, rgba(21, 21, 21, 1), #1d1d1d)"
       display="flex"
       alignItems="center"
       justifyContent="center"
