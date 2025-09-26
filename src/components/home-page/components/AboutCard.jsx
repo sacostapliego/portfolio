@@ -10,11 +10,12 @@ import {
 } from '@chakra-ui/react';
 import { LuArrowUpRight } from "react-icons/lu";
 
+// Remove href for now
 
-const About = ({ title, desc, href }) => {
+const About = ({ title, desc  }) => {
   return (
     <Link
-      href={href}
+      // href={href}
       isExternal
       target="_blank"
       aria-label={`Open ${title} externally`}
@@ -25,6 +26,7 @@ const About = ({ title, desc, href }) => {
       _focusVisible={{ boxShadow: 'none', outline: 'none' }}
       _active={{ boxShadow: 'none', outline: 'none' }}
       sx={{ WebkitTapHighlightColor: 'transparent' }}
+
     >
       <Box
         as="article"
@@ -33,12 +35,15 @@ const About = ({ title, desc, href }) => {
         minH="8rem"
         position="relative"
         transition="transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease"
-        cursor="pointer"
         _hover={{
           bg: 'rgba(25,25,25,0.95)',
         }}
+        // temp removal of cursor pointer
+        cursor="default"
       >
         {/* external icon top-right (visual only; outer Link handles clicks) */}
+        {/* remove the icon for a bit, till I make these pages */}
+        {/* 
         <Icon
           as={LuArrowUpRight}
           boxSize={5}
@@ -47,7 +52,8 @@ const About = ({ title, desc, href }) => {
           right="12px"
           top="12px"
           pointerEvents="none"
-        />
+        /> 
+        */}
 
         <Flex align="center">
           <Stack spacing={1} flex="1" minW={0}>

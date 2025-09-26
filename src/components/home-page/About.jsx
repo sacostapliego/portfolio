@@ -52,20 +52,23 @@ const About = () => {
       {/* container for staggered reveal (reveal.css targets .projects-grid > *) */}
       <Stack className="projects-grid" spacing={{ base: 4, md: 5 }} alignItems="flex-start">
         <AboutCard
-          title="Cardinal Wishlist"
-          desc="Full stack web and mobile application to manage and share wishlists, 
-          built with React, React Native, Expo, s3, Supabase Auth and fastAPI."
-          href="https://cardinal-wishlist.onrender.com/"
+          title="Today"
+          desc="I am currently attending Georgia State University, pursuing a bachelor's degree in computer science. Immersing myself in Atlanta's energetic and fast-paced environment has greatly influenced my creativity and personal growth. The computer science program provides a strong foundation for me to explore areas that interest me, from complex concepts like artificial intelligence to more creatively oriented processes such as web development."
+          href="#"
         />
         <AboutCard
-          title="Cardinal Wishlist Landing Page"
-          desc="Landing page for the Cardinal Wishlist application, showcasing features and benefits."
+          title="Hobbies"
+          desc="One of the newest hobbies I picked up over the last year has been researching and assembling custom PCs. So far, I have built my own PC; however, I am always researching ways to upgrade it or even build a separate PC. I plan for my next personal project to be a micro ATX build. In addition to building my own PC, I have used this experience to help my little brother build his own."
           href="https://cardinal-wishlist.vercel.app/"
         />
         <AboutCard
-          title="Portfolio"
-          desc="Showcasing my work and skills as a computer science student."
-          href="#"
+          title="Relevant courses"
+          desc="
+          Software Development, Big Data Programming, Web Programming,
+          Data Structures, Computer Organization, System-Level Programming, 
+          Linear Algebra, Discrete Math Principles of Computer Science I & II
+          "
+          href="https://cardinal-wishlist.onrender.com/"
         />
       </Stack>
 
