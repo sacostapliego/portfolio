@@ -17,11 +17,10 @@ function HomePage() {
         w={{ base: '100%', lg: '100vw', '2xl': '85vw'  }}
         maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
         px={{ base: '1rem', lg: '2.5rem' }}
-        pt={{ base: '6.25rem', lg: '9rem' }}
+        pt={{ base: '5rem', lg: '4rem' }}
         pb="2.5rem"
         mx="auto"
         boxSizing="border-box"
-        mt={{ base: '0.5rem', md: '2rem' ,lg: '-1rem', '2xl': '2rem'}}
       >
         <Box
           flex={{ base: 'none', lg: '0 1 35%', '2xl': '0 1 40%' }}

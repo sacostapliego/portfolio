@@ -10,22 +10,21 @@ const Header = () => {
   return (
     <Box
       as="header"
-      position="fixed"
       top={{ base: '15px', md: '30px' }}
-      left="50%"
-      transform="translateX(-50%)"
-      zIndex={1000}
+      w="100%"
+      textAlign="center"
+      mt={{ base: '20px', md: '60px' }}
     >
       <HStack
+        mx="auto"
+        w={'fit-content'}
         bg="rgba(25, 25, 25, 1)"
         backdropFilter="blur(20px)"
         borderRadius="20px"
-        px={{ base: '20px', md: '40px' }}
         py="10px"
         align="center"
-        spacing={{ base: '15px', md: '30rem' }}
         gap={{ base: 3, md: 4 }}
-        minW={{ base: '180px', md: '200px' }}
+        minW={{ base: '60vw', md: '15vw' }}
         justify="center"
       >
         <NavButton label="Home" icon={LuHouse} to="/" />

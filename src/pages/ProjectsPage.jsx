@@ -16,7 +16,6 @@ function ProjectsPage() {
         maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
         minH={'80vh'}
         px={{ base: '1rem', lg: '2.5rem' }}
-        pt={{ base: '4rem', lg: '5rem' }}
         pb="2.5rem"
         mx="auto"
         flexDirection="column"

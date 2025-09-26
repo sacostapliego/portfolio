@@ -47,7 +47,6 @@ function PlaygroundPage() {
           w={{ base: '100%', lg: '85vw', '2xl': '70vw' }}
           minH={'100vh'}
           px={{ base: '1rem', lg: '2.5rem' }}
-          pt={{ base: '4rem', lg: '5rem' }}
           pb="2.5rem"
           mx="auto"
           flexDirection={'column'}
