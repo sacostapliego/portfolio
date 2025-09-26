@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Image, Heading, Text, HStack, Link } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import me from '../../components/assets/images/me.png';
 
 const blue = 'rgba(137, 207, 240, 1)';
 
@@ -8,9 +9,10 @@ const Card = () => {
   return (
     <Box
       as="section"
-      maxW={{ base: '15rem', md: '23rem' }}
+      maxW={{ base: '14rem', md: '23rem' }}
       mx={{ base: 0, md: 'auto' }}
       mb={{ base: 0, md: '1rem' }}
+      mt={{ base: -7, md: 0 }}
       display="block"
       height={{ base: 'auto', md: '100%' }}
     >
@@ -22,6 +24,7 @@ const Card = () => {
         position={{ base: 'relative', md: 'sticky' }}
         top={{ base: 0, md: '5rem', lg: '7rem' }}
         zIndex={2}
+        // Dotted lines
         _before={{
           content: '""',
           position: 'absolute',
@@ -51,13 +54,14 @@ const Card = () => {
       >
         <Box display="flex" justifyContent="center" mb="1.5rem">
           <Image
-            src="https://cdna.artstation.com/p/assets/images/images/075/039/706/large/retratosanime-514.jpg?1713581850"
+            src={me}
             alt="Profile"
             w={{ base: '6.25rem', md: '16rem' }}
             h={{ base: '6.25rem', md: '18rem' }}
             borderRadius="8px"
             objectFit="cover"
             transition="transform 0.3s ease"
+            background={blue}
           />
         </Box>
 
