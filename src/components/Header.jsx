@@ -24,7 +24,7 @@ const Header = () => {
         py="10px"
         align="center"
         gap={{ base: 3, md: 4 }}
-        minW={{ base: '60vw', md: '15vw' }}
+        minW={{ base: '60vw', md: '20vw', '2xl': '15vw' }}
         justify="center"
       >
         <NavButton label="Home" icon={LuHouse} to="/" />
