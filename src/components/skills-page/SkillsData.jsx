@@ -18,7 +18,7 @@ const skillsData = [
       { imageSrc: pyIcon, title: 'Python', subtitle: 'Backend/AI', proficiency: 'Advanced', tags: ['Backend', 'AI', 'Data Analysis'] },
       { imageSrc: jsIcon, title: 'JavaScript', subtitle: 'Frontend Web', proficiency: 'Advanced', tags: ['Frontend', 'Web Development', 'Dynamic Content'] },
       { imageSrc: tsIcon, title: 'TypeScript', subtitle: 'Frontend Web/Mobile', proficiency: 'Intermediate', tags: ['Frontend', 'Type Safety', 'Scalable Apps'] },
-      { imageSrc: javaIcon, title: 'Java', subtitle: 'Backend', proficiency: 'Intermediate', tags: ['Backend', 'OOP', 'Enterprise Apps'] },
+      { imageSrc: javaIcon, title: 'Java', subtitle: 'Backend', proficiency: 'Intermediate', tags: ['Backend', 'OOP'] },
     ],
   },
   {

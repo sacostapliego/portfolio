@@ -1,7 +1,22 @@
 import { Box, SimpleGrid, Text, Wrap, Badge, VStack, Image } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
 import '../animations/flip-card.css';
 
 const SkillsGrid = ({ skillsData }) => {
+  const [flippedCard, setFlippedCard] = useState({ categoryIdx: null, skillIdx: null });
+
+  useEffect(() => {
+    // Automatically flip the first card
+    const flipTimeout = setTimeout(() => {
+      setFlippedCard({ categoryIdx: 0, skillIdx: 0 }); // Flip the first card in the first catalog
+      setTimeout(() => {
+        setFlippedCard({ categoryIdx: null, skillIdx: null }); // Flip it back after 750ms
+      }, 750);
+    }, 250); // Delay before flipping the card
+
+    return () => clearTimeout(flipTimeout); // Cleanup timeout
+  }, []);
+
   return (
     <SimpleGrid 
       columns={{ base: 1, lg: 2 }} 
@@ -17,7 +32,7 @@ const SkillsGrid = ({ skillsData }) => {
             fontWeight="bold"
             color="rgba(251,247,245)"
             mb="1.5rem"
-            textAlign="center" // Center the category title
+            textAlign="center"
           >
             {category.category}
           </Text>
@@ -28,7 +43,17 @@ const SkillsGrid = ({ skillsData }) => {
             gapY={{ base: 10, md: 6 }}
           >
             {category.skills.map((skill, skillIdx) => (
-              <Box key={skillIdx} className="flip-card" w="100%" h="6rem" borderRadius="0.75rem">
+              <Box 
+                key={skillIdx} 
+                className={`flip-card ${
+                  flippedCard.categoryIdx === categoryIdx && flippedCard.skillIdx === skillIdx
+                    ? 'flipped'
+                    : ''
+                }`} 
+                w="100%" 
+                h="6rem" 
+                borderRadius="0.75rem"
+              >
                 <Box className="flip-card-inner" w="100%" h="100%">
                   {/* Front Side */}
                   <Box
@@ -52,14 +77,13 @@ const SkillsGrid = ({ skillsData }) => {
                     </Box>
 
                     {/* Title and Subtitle */}
-                    <VStack align="flex-start" spacing={0}>
+                    <VStack align="flex-start" gapY={1}>
                       <Text
                         fontSize={{ base: '1.25rem', lg: '1.25rem', '2xl': '1.5rem' }}
                         fontWeight="bolder"
                         color="rgba(251,247,245)"
-                        justifyContent={'flex-start'}
-                        alignItems={'flex-start'}
                         w={'full'}
+                        textAlign={'left'}
                       >
                         {skill.title}
                       </Text>
@@ -68,6 +92,7 @@ const SkillsGrid = ({ skillsData }) => {
                         fontWeight="light"
                         color="rgba(255,255,255,0.7)"
                         w={'full'}
+                        textAlign={'left'}
                       >
                         {skill.subtitle}
                       </Text>
@@ -86,12 +111,16 @@ const SkillsGrid = ({ skillsData }) => {
                     bg="rgba(25,25,25,0.95)"
                     alignItems={'flex-start'}
                   >
-                    <Text fontSize="0.7rem" color="gray.300" mb="0.5rem">
+                    <Text fontSize={{ base: "0.8rem", md: "0.7rem", '2xl': "0.8rem" }} color="gray.300" mb="0.5rem">
                       Proficiency: {skill.proficiency}
                     </Text>
                     <Wrap spacing={2} justify="flex-start">
                       {skill.tags.map((tag, tagIdx) => (
-                        <Badge key={tagIdx} size="xs" backgroundColor="rgba(43, 43, 43, 1)">
+                        <Badge 
+                          key={tagIdx}
+                          size={{ base: "sm", md: "xs", '2xl': "sm" }} 
+                          backgroundColor="rgba(43, 43, 43, 1)"
+                          >
                           {tag}
                         </Badge>
                       ))}

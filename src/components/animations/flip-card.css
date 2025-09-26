@@ -1,7 +1,11 @@
 .flip-card {
   perspective: 1000px;
-  width: 100%; /* Ensure the card takes up full width */
-  height: 100%; /* Ensure the card takes up full height */
+  width: 100%; 
+  height: 100%;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 .flip-card-inner {
