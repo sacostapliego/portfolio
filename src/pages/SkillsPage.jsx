@@ -1,52 +1,42 @@
-import { Box, Flex } from '@chakra-ui/react';
-import Card from '../components/home-page/Card';
-import Skills from '../components/home-page/Skills';
-import '../components/animations/fade.css';
+import { Box, Flex, Text, Heading, Separator } from '@chakra-ui/react';
+import skillsData from '../components/skills-page/SkillsData';
+import SkillsGrid from '../components/skills-page/SkillsGrid';
 
 function SkillsPage() {
   return (
     <>
       <Flex
-        className="fade-in"
-        direction={{ base: 'column', lg: 'column' }}
-        align={{ base: 'center', lg: 'center' }}
-        gap={{ base: '1.25rem', lg: '2.5rem' }}
-        w={{ base: '100%', lg: '100vw', '2xl': '85vw'  }}
-        maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
-        px={{ base: '1rem', lg: '2.5rem' }}
-        pt={{ base: '6.25rem', lg: '5rem' }}
-        pb="2.5rem"
-        mx="auto"
-        boxSizing="border-box"
-        mt={{ base: '0.5rem', md: '2rem' ,lg: '-1rem', '2xl': '2rem'}}
-      >
-
-        {/* Main content box */}
-        <Box
-          minW={0}
-          pl={{ base: 0, lg: '1rem' }}
-          flex={{ base: 'none', lg: '1 1 0' }}
-          sx={{
-            // h1: 2.5rem on large, 2rem on small
-            'h1': {
-              color: "rgba(251,247,245)",
-              mb: '1.25rem',
-              fontSize: { base: '2rem', lg: '2.5rem' },
-            },
-            // h2: 1.8rem on large, 1.5rem on small
-            'h2': {
-              color: "rgba(251,247,245)",
-              fontSize: { base: '1.5rem', lg: '1.8rem' },
-            },
-            // p: color and spacing preserved
-            'p': {
-              color: 'rgba(255, 255, 255, 0.8)',
-              lineHeight: 1.6,
-              mb: '1.25rem',
-            },
-          }}
+          className="fade-in"
+          w={{ base: '100%', lg: '85vw', '2xl': '70vw'  }}
+          px={{ base: '1rem', lg: '2.5rem' }}
+          pt={{ base: '4rem', lg: '5rem' }}
+          pb="2.5rem"
+          mx="auto"
+          flexDirection={'column'}
+          alignItems={'center'}
         >
-          <Skills />
+          {/* Main content box */}
+          <Box
+            as="section"
+            id="projects"
+            className="reveal"
+            mt={{ base: '4rem', md: '6rem' }}
+            w={'100%'}
+          >
+            <Heading
+              as="h1"
+              lineHeight="1.05"
+              fontSize={{ base: '2.5rem', md: '3rem', lg: '4rem' }}
+              mb={{ base: '1.5rem', md: '2rem' }}
+              textAlign={'left'}
+            >
+              <Text color="rgba(251,247,245)" display="block" mb={'0.5rem'} fontWeight="900">SKILLS</Text>
+            </Heading>
+
+            <Separator mb={'2rem'} />
+
+            {/* Skills Grid */}
+          <SkillsGrid skillsData={skillsData} />
         </Box>
       </Flex>
     </>

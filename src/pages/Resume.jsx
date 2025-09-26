@@ -4,7 +4,13 @@ import '../components/animations/fade.css';
 function Resume() {
   return (
     <>
-    {/* Fade in animation + page setup */}
+    {/* 
+    TODO: 
+    When adding more resumes,
+    Make it a carousel layout, or something like that
+    With arrows to navigate between them, and at the top showing 
+    which one is being viewed with a dot or something
+    */}
       <Flex
         className="fade-in"
         w={{ base: '100%', lg: '85vw', '2xl': '70vw'  }}
@@ -32,7 +38,6 @@ function Resume() {
           <Separator mb={'2rem'} />
 
 
-          {/* PDF Viewer using iframe */}
           <Box
             w={{ base: "100%", md: "50%" }}
             h={{ base: "55vh", md: "90vh" }}
@@ -41,14 +46,14 @@ function Resume() {
             >
               <Text 
               color="rgba(255, 255, 255, 0.9)" 
-              fontSize={{ base: '1rem', lg: '1rem' }} 
+              fontSize={{ base: '0.8rem', lg: '1rem' }} 
               fontWeight="600"
               >
                 Overall résumé
               </Text>
               <Text 
               color="rgba(255, 255, 255, 0.7)" 
-              fontSize={{ base: '1rem', md: '0.5rem', lg: '0.75rem' }} 
+              fontSize={{ base: '0.6rem', lg: '0.75rem' }} 
               fontWeight="600"
               mb={'1rem'}
               >
