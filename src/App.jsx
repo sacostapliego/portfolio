@@ -9,7 +9,7 @@ import PlaygroundPage from './pages/PlaygroundPage';
 
 function App() {
   return (
-    <Router>
+    <Router style={{ backgroundColor: 'rgba(21, 21, 21, 1)' }}>
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />

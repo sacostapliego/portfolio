@@ -21,6 +21,7 @@ function HomePage() {
         pb="2.5rem"
         mx="auto"
         boxSizing="border-box"
+        backgroundColor="rgba(21, 21, 21, 1)"
       >
         <Box
           flex={{ base: 'none', lg: '0 1 35%', '2xl': '0 1 40%' }}
