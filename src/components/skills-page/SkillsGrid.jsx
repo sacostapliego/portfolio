@@ -122,6 +122,7 @@ const SkillsGrid = ({ skillsData }) => {
                           key={tagIdx}
                           size={{ base: "sm", md: "xs", '2xl': "sm" }} 
                           backgroundColor="rgba(43, 43, 43, 1)"
+                          color={'white'}
                           >
                           {tag}
                         </Badge>

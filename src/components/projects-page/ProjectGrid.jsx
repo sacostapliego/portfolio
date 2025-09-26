@@ -56,7 +56,7 @@ const ProjectGrid = ({ projects }) => {
                 {/* Tags/Chips */}
                 <Wrap spacing={2}>
                   {project.tags.map((tag, tagIdx) => (
-                    <Badge key={tagIdx} size="sm" backgroundColor="rgba(43, 43, 43, 1)">
+                    <Badge key={tagIdx} size="sm" color={'white'} backgroundColor="rgba(43, 43, 43, 1)">
                       {tag}
                     </Badge>
                   ))}
