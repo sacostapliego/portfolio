@@ -1,13 +1,46 @@
 import { Box, Flex, Text, Heading, Separator } from '@chakra-ui/react';
+import { BiError } from "react-icons/bi";
 import ChatBot from '../components/experiments-page/first/ChatBot';
+import '../components/animations/fade.css';
 
 function ExperimentsPage() {
   return (
     <>
-      <Flex
+      {/* Parent container to hold splashes */}
+      <Box position="relative" w="100%" h="100%" overflow="hidden">
+        {/* Left Blue Splash */}
+        <Box
+          position="absolute"
+          top="60%"
+          left="-5rem"
+          transform="translateY(-50%)"
+          w="20rem"
+          h="20rem"
+          bg="blue.500"
+          opacity={0.3}
+          borderRadius="50%"
+          filter="blur(100px)"
+        />
+
+        {/* Right Red Splash */}
+        <Box
+          position="absolute"
+          top="30%"
+          right="-5rem"
+          transform="translateY(-50%)"
+          w="20rem"
+          h="20rem"
+          bg="red.500"
+          opacity={0.3}
+          borderRadius="50%"
+          filter="blur(100px)"
+        />
+
+        {/* Main content box */}
+        <Flex
           className="fade-in"
-          w={{ base: '100%', lg: '85vw', '2xl': '70vw'  }}
-          minH={'80vh'}
+          w={{ base: '100%', lg: '85vw', '2xl': '70vw' }}
+          minH={'100vh'}
           px={{ base: '1rem', lg: '2.5rem' }}
           pt={{ base: '4rem', lg: '5rem' }}
           pb="2.5rem"
@@ -15,7 +48,6 @@ function ExperimentsPage() {
           flexDirection={'column'}
           alignItems={'center'}
         >
-          {/* Main content box */}
           <Box
             as="section"
             id="projects"
@@ -39,9 +71,16 @@ function ExperimentsPage() {
             <Separator mb={'2rem'} />
 
             {/* Chatbot */}
+            <Box mb={'1rem'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+              <BiError color='yellow' />
+              <Text display={'inline-block'} color="rgba(255, 255, 255, 0.9)" fontSize={{ base: '0.8rem', md: '1rem' }} fontWeight="600" ml={'0.5rem'}>
+                Note: This is a very basic chatbot, it does not have advanced capabilities like context retention or complex conversations.
+              </Text>
+            </Box>
             <ChatBot />
-        </Box>
-      </Flex>
+          </Box>
+        </Flex>
+      </Box>
     </>
   );
 }

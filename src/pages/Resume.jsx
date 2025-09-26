@@ -39,21 +39,21 @@ function Resume() {
 
 
           <Box
-            w={{ base: "100%", md: "50%" }}
+            w={{ base: "100%", md: "50%"}}
             h={{ base: "55vh", md: "90vh" }}
             borderRadius="8px"
             mx={'auto'}
             >
               <Text 
               color="rgba(255, 255, 255, 0.9)" 
-              fontSize={{ base: '0.8rem', lg: '1rem' }} 
+              fontSize={{ base: '0.8rem', lg: '1rem', '2xl': '1.2rem' }} 
               fontWeight="600"
               >
                 Overall résumé
               </Text>
               <Text 
               color="rgba(255, 255, 255, 0.7)" 
-              fontSize={{ base: '0.6rem', lg: '0.75rem' }} 
+              fontSize={{ base: '0.6rem', lg: '0.75rem', '2xl': '1rem' }} 
               fontWeight="600"
               mb={'1rem'}
               >
