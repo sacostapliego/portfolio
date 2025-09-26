@@ -7,7 +7,7 @@ const projectData = [
   {
     title: 'Cardinal Wishlist',
     image: cardinalPage,
-    tags: ['React Native','Expo', 'Node.js', 'Supabase', 'FastAPI', 'AWS', 'TypeScript', 'Python', 'Render'],
+    tags: ['React Native','Expo', 'Node.js', 'Supabase', 'FastAPI', 'AWS', 'TypeScript', 'Python', 'Render', 'PostgreSQL'],
     description:
       'Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI.',
     link: 'https://cardinal-wishlist.onrender.com/',
@@ -23,7 +23,7 @@ const projectData = [
   {
     title: 'Portfolio',
     image: portfolioPage,
-    tags: ['React', 'Chakra UI', 'Vite', 'JavaScript', 'Vercel'],
+    tags: ['React', 'Chakra UI', 'Vite', 'JavaScript', 'Vercel', 'Node.js'],
     description: 'Showcasing my work and skills as a computer science student.',
     link: '/',
   },

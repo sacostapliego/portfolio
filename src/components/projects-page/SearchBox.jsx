@@ -46,7 +46,7 @@ const SearchBox = ({ projectData, onFilter }) => {
       {/* Search Input and Clear Button */}
       <HStack spacing={2} align="center" w="100%">
         <Input
-          placeholder="Search projects..."
+          placeholder="Search projects or tools used..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           size="lg"
