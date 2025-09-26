@@ -2,8 +2,13 @@ import { Box, Flex, Text, Heading, Separator } from '@chakra-ui/react';
 import { BiError } from "react-icons/bi";
 import ChatBot from '../components/experiments-page/first/ChatBot';
 import '../components/animations/fade.css';
+import { useEffect } from 'react';
 
-function ExperimentsPage() {
+function PlaygroundPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <>
       {/* Parent container to hold splashes */}
@@ -85,4 +90,4 @@ function ExperimentsPage() {
   );
 }
 
-export default ExperimentsPage;
+export default PlaygroundPage;
