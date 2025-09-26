@@ -10,6 +10,7 @@ import mongoIcon from '../assets/skills/mongoicon.svg';
 import gitIcon from '../assets/skills/giticon.svg';
 import awsIcon from '../assets/skills/awsicon.svg';
 import supabaseIcon from '../assets/skills/supabaseicon.svg';
+import expoIcon from '../assets/skills/expoicon.svg';
 
 const skillsData = [
   {
@@ -27,6 +28,7 @@ const skillsData = [
       { imageSrc: reactIcon, title: 'React', subtitle: 'Frontend', proficiency: 'Advanced', tags: ['Frontend', 'UI/UX', 'Component-Based'] },
       { imageSrc: nodeIcon, title: 'Node.js', subtitle: 'Packages', proficiency: 'Intermediate', tags: ['Backend', 'APIs', 'Server-Side'] },
       { imageSrc: chakraIcon, title: 'Chakra UI', subtitle: 'Styling', proficiency: 'Advanced', tags: ['Styling', 'Responsive Design', 'UI Components'] },
+      { imageSrc: expoIcon, title: 'Expo', subtitle: 'Mobile Apps', proficiency: 'Intermediate', tags: ['Mobile', 'Cross-Platform', 'React Native'] },
     ],
   },
   {

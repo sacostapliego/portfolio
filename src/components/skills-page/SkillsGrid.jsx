@@ -64,6 +64,7 @@ const SkillsGrid = ({ skillsData }) => {
                     justifyContent="flex-start"
                     p="1rem"
                     borderRadius="0.75rem"
+                    cursor={'default'}
                   >
                     {/* Image on the left */}
                     <Box
@@ -110,6 +111,7 @@ const SkillsGrid = ({ skillsData }) => {
                     borderRadius="0.75rem"
                     bg="rgba(25,25,25,0.95)"
                     alignItems={'flex-start'}
+                    cursor={'default'}
                   >
                     <Text fontSize={{ base: "0.8rem", md: "0.7rem", '2xl': "0.8rem" }} color="gray.300" mb="0.5rem">
                       Proficiency: {skill.proficiency}

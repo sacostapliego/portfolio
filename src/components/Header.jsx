@@ -31,7 +31,7 @@ const Header = () => {
         <NavButton label="Home" icon={LuHouse} to="/" />
         <NavButton label="Projects" icon={FaRegFolder} to="/projects" />
         <NavButton label="Skills" icon={FaCode} to="/skills" />
-        <NavButton label="Experiments" icon={AiOutlineExperiment} to="/" />
+        <NavButton label="Experiments" icon={AiOutlineExperiment} to="/experiments" />
         <NavButton label="Résumé" icon={IoDocumentTextOutline} to="/resume" />
       </HStack>
     </Box>

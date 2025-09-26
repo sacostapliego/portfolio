@@ -1,20 +1,25 @@
 import { Box, Flex, Heading, Separator, Text } from '@chakra-ui/react';
-import RecentProjects from '../components/home-page/RecentProjects';
-import '../components/animations/fade.css';
+import { useState } from 'react';
 import ProjectGrid from '../components/projects-page/ProjectGrid';
+import SearchBox from '../components/projects-page/SearchBox';
+import projectData from '../components/projects-page/ProjectData'; // Import project data
 
 function ProjectsPage() {
+  const [filteredProjects, setFilteredProjects] = useState(projectData); // State for filtered projects
+
   return (
     <>
-    {/* Fade in animation + page setup */}
+      {/* Fade in animation + page setup */}
       <Flex
         className="fade-in"
-        w={{ base: '100%', lg: '85vw', '2xl': '70vw'  }}
+        w={{ base: '100%', lg: '85vw', '2xl': '70vw' }}
         maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
+        minH={'80vh'}
         px={{ base: '1rem', lg: '2.5rem' }}
         pt={{ base: '4rem', lg: '5rem' }}
         pb="2.5rem"
         mx="auto"
+        flexDirection="column"
       >
         {/* Main content box */}
         <Box
@@ -29,14 +34,20 @@ function ProjectsPage() {
             fontSize={{ base: '2.5rem', md: '3rem', lg: '4rem' }}
             mb={{ base: '1.5rem', md: '2rem' }}
           >
-            <Text color="rgba(251,247,245)" display="block" mb={'0.5rem'} fontWeight="900">PROJECTS</Text>
-            <Text color="rgba(255,255,255,0.3)" fontSize={{ base: '1rem', md: '1.5rem', lg: '1.5rem' }} fontWeight="400">
-              These are projects, from school to personal passion projects, that I have learned a lot from.
+            <Text color="rgba(251,247,245)" display="block" mb={'0.5rem'} fontWeight="900">
+              PROJECTS
             </Text>
           </Heading>
+
+          {/* Search Box */}
+          <Box  w={{ base: '100%', md: '50%' }} justifyContent="flex-end">
+            <SearchBox projectData={projectData} onFilter={setFilteredProjects} />
+          </Box>
+
           <Separator mb={'2rem'} />
 
-          <ProjectGrid />
+          {/* Project Grid */}
+          <ProjectGrid projects={filteredProjects} />
         </Box>
       </Flex>
     </>
