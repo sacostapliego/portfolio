@@ -15,14 +15,6 @@ function ChatBot() {
   const [isTyping, setIsTyping] = useState(false);
   const messageEndRef = useRef(null);
 
-  const scrollToBottom = () => {
-    messageEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!input.trim()) return;
