@@ -30,11 +30,11 @@ function PlaygroundPage() {
         {/* Right Red Splash */}
         <Box
           position="absolute"
-          top={{ base: "45%", md: "45%", '2xl': "30%" }}
+          top={{ base: "40%", md: "45%", '2xl': "30%" }}
           right="-5rem"
           transform="translateY(-50%)"
-          w="20rem"
-          h="20rem"
+          w={{ base: "12rem", md: "20rem", lg: "20rem" }}
+          h={{ base: "12rem", md: "20rem", lg: "20rem" }}
           bg="red.500"
           opacity={0.3}
           borderRadius="50%"
@@ -45,7 +45,7 @@ function PlaygroundPage() {
         <Flex
           className="fade-in"
           w={{ base: '100%', lg: '85vw', '2xl': '70vw' }}
-          minH={'100vh'}
+          minH={{ base: '120vh', md: '100vh', lg: '100vh' }}
           px={{ base: '1rem', lg: '2.5rem' }}
           pb="2.5rem"
           mx="auto"
