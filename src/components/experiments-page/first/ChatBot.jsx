@@ -136,6 +136,7 @@ function ChatBot() {
             borderColor="gray.700" 
             borderWidth={1}
             mr={2}
+            fontSize={'16px'}
           />
           <Button type="submit" colorScheme="blue" borderRadius="md">
             <IoIosSend size={20} />
