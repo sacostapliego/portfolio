@@ -30,7 +30,7 @@ function PlaygroundPage() {
         {/* Right Red Splash */}
         <Box
           position="absolute"
-          top={{ base: "38%", md: "45%", '2xl': "30%" }}
+          top={{ base: "38%", md: "45%", '2xl': "40%" }}
           right="-5rem"
           transform="translateY(-50%)"
           w={{ base: "12rem", md: "20rem", lg: "20rem" }}
