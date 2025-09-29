@@ -8,7 +8,7 @@ export default function HoverArrowButton({
   leftIcon: LeftIcon = FaExternalLinkAlt,
   rightIcon: RightIcon = FaArrowRight,
   color = 'black',
-  px = 8,
+  px = { base: 2, md: 8 },
   py = 6,
   borderRadius = '16px',
   bg = 'rgba(255, 255, 255, 1)',
@@ -63,7 +63,7 @@ export default function HoverArrowButton({
         </Box>
 
         {/* Text */}
-        <Text className="cta-text" whiteSpace="nowrap">
+        <Text className="cta-text"  whiteSpace="nowrap">
           {children}
         </Text>
 
