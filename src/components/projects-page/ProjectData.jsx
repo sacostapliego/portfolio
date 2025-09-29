@@ -11,8 +11,9 @@ const projectData = [
     description:
       'Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI.',
     link: 'https://cardinal-wishlist.onrender.com/',
+    // These are fields for individual pages
     warning: 'This website is hosted on a free tier and may take up to 2-3 minutes to load.',
-    keyFeatures: ['Feature 1', 'Feature 2', 'Feature 3'],
+    overview: '',
   },
   {
     title: 'Cardinal Wishlist Landing Page',
