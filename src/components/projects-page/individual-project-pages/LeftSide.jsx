@@ -51,8 +51,8 @@ function LeftSideProjectsPage() {
             borderRadius="md"
             border="1px solid rgba(255, 255, 0, 0.5)"
           >
-            <Icon as={BiError} boxSize="1.5rem" color="yellow.400" mr="0.5rem" />
-            <Text fontSize="sm" color="yellow.300" fontWeight="600">
+            <Icon as={BiError} boxSize={{ base: "1.5rem", md: "1rem", '2xl': "1.5rem" }} color="yellow.400" mr="0.5rem" />
+            <Text fontSize={{ base: "0.7rem", md: "0.7rem", '2xl': "1rem" }} color="yellow.300" fontWeight="600">
               {project.warning}
             </Text>
           </Box>
