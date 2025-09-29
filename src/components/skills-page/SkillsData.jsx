@@ -32,18 +32,13 @@ const skillsData = [
     ],
   },
   {
-    category: 'Databases',
-    skills: [
-      { imageSrc: postgresIcon, title: 'PostgreSQL', subtitle: 'Local Database', proficiency: 'Intermediate', tags: ['Database', 'Relational', 'SQL'] },
-      { imageSrc: mongoIcon, title: 'MongoDB', subtitle: 'Database', proficiency: 'Intermediate', tags: ['Database', 'NoSQL', 'Scalable'] },
-    ],
-  },
-  {
     category: 'Tools & Platforms',
     skills: [
       { imageSrc: gitIcon, title: 'Git', subtitle: 'Version Control', proficiency: 'Advanced', tags: ['Version Control', 'Collaboration', 'Repositories'] },
       { imageSrc: awsIcon, title: 'AWS', subtitle: 'Cloud/Image Hosting', proficiency: 'Intermediate', tags: ['Cloud', 'Hosting', 'Scalability'] },
+      { imageSrc: postgresIcon, title: 'PostgreSQL', subtitle: 'Local Database', proficiency: 'Intermediate', tags: ['Database', 'Relational', 'SQL'] },
       { imageSrc: supabaseIcon, title: 'Supabase', subtitle: 'Database', proficiency: 'Beginner', tags: ['Database', 'Backend', 'Open Source'] },
+      { imageSrc: mongoIcon, title: 'MongoDB', subtitle: 'Database', proficiency: 'Intermediate', tags: ['Database', 'NoSQL', 'Scalable'] },
     ],
   },
 ];

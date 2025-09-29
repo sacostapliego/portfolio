@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Heading, Separator } from '@chakra-ui/react';
+import { Box, Flex, Text, Heading, Separator, Icon } from '@chakra-ui/react';
 import { BiError } from "react-icons/bi";
 import ChatBot from '../components/experiments-page/first/ChatBot';
 import '../components/animations/fade.css';
@@ -75,12 +75,19 @@ function PlaygroundPage() {
             <Separator mb={'2rem'} />
 
             {/* Chatbot */}
-            <Box mb={'1rem'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-              <BiError color='yellow' />
-              <Text display={'inline-block'} color="rgba(255, 255, 255, 0.9)" fontSize={{ base: '0.8rem', md: '1rem' }} fontWeight="600" ml={'0.5rem'}>
-                Note: This is a very basic chatbot, it does not have advanced capabilities like context retention or complex conversations.
-              </Text>
-            </Box>
+            <Box
+              mb="1.5rem"
+              display="flex"
+              alignItems="center"
+              justifyContent={'center'}
+              p="1rem"
+              borderRadius="md"
+            >
+                <Icon as={BiError} boxSize="1.5rem" color="yellow.400" mr="0.5rem" />
+                <Text fontSize="sm" color="yellow.300" fontWeight="600">
+                  Note: This is a very basic chatbot, it does not have advanced capabilities like context retention or complex conversations.
+                </Text>
+              </Box>
             <ChatBot />
           </Box>
         </Flex>

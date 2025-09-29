@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, SimpleGrid, VStack, Image, Heading, Text, Icon, HStack, Wrap, Badge, Link, Separator } from '@chakra-ui/react';
+import { Box, SimpleGrid, VStack, Image, Heading, Text, Icon, HStack, Wrap, Badge, Separator } from '@chakra-ui/react';
 import { LuArrowUpRight } from 'react-icons/lu';
+import { Link } from 'react-router-dom'; // Import React Router's Link
 
 const ProjectGrid = ({ projects }) => {
   return (
@@ -14,14 +15,8 @@ const ProjectGrid = ({ projects }) => {
         {projects.map((project, idx) => (
           <Link
             key={idx}
-            href={project.link}
-            isExternal
-            target="_blank"
-            _hover={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none', outline: 'none' }}
-            _focusVisible={{ boxShadow: 'none', outline: 'none' }}
-            _active={{ boxShadow: 'none', outline: 'none' }}
-            sx={{ WebkitTapHighlightColor: 'transparent' }}
+            to={`/projects/${project.title.toLowerCase().replace(/\s+/g, '-')}`} // Dynamic route
+            style={{ textDecoration: 'none' }} // Remove default link styling
           >
             <Box
               borderRadius="1rem"
