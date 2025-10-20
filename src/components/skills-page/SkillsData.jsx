@@ -27,7 +27,6 @@ const skillsData = [
     skills: [
       { imageSrc: reactIcon, title: 'React', subtitle: 'Frontend', tags: ['Frontend', 'UI/UX', 'Component-Based'] },
       { imageSrc: nodeIcon, title: 'Node.js', subtitle: 'Packages', tags: ['Backend', 'APIs', 'Server-Side'] },
-      { imageSrc: chakraIcon, title: 'Chakra UI', subtitle: 'Styling', tags: ['Styling', 'Responsive Design', 'UI Components'] },
       { imageSrc: expoIcon, title: 'Expo', subtitle: 'Mobile Apps', tags: ['Mobile', 'Cross-Platform', 'React Native'] },
     ],
   },
@@ -39,6 +38,7 @@ const skillsData = [
       { imageSrc: postgresIcon, title: 'PostgreSQL', subtitle: 'Local Database', tags: ['Database', 'Relational', 'SQL'] },
       { imageSrc: supabaseIcon, title: 'Supabase', subtitle: 'Database', tags: ['Database', 'Backend', 'Open Source'] },
       { imageSrc: mongoIcon, title: 'MongoDB', subtitle: 'Database', tags: ['Database', 'NoSQL', 'Scalable'] },
+      { imageSrc: chakraIcon, title: 'Chakra UI', subtitle: 'Styling', tags: ['Styling', 'Responsive Design', 'UI Components'] },
     ],
   },
 ];

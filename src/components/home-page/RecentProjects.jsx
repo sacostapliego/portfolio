@@ -9,7 +9,7 @@ import '../animations/reveal.css'
 import ProjectCard from './components/ProjectCard';
 
 import cardinalAppImage from '../assets/projects/recent/cardinal.png'
-import cardinalLandingImage from '../assets/projects/recent/cardinal-landing.png'
+import aiclosetImage from '../assets/projects/recent/ai-closet.png'
 import portfolioImage from '../assets/projects/full/portfolio-full.png'
 
 
@@ -63,10 +63,10 @@ const RecentProjects = () => {
           image={cardinalAppImage}
         />
         <ProjectCard
-          title="Cardinal Wishlist Landing Page"
-          desc="Landing page for the Cardinal Wishlist application, showcasing features and benefits."
-          href="https://cardinal-wishlist.vercel.app/"
-          image={cardinalLandingImage}
+          title="AI Try-On Closet"
+          desc="A full-stack AI-powered, Club Penguin inspired, closet that allows users to upload photos and generate photorealistic images of themselves wearing selected clothing items."
+          href="https://github.com/sacostapliego/penguin-outfits"
+          image={aiclosetImage}
         />
         <ProjectCard
           title="Portfolio"

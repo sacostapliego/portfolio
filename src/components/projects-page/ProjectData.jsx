@@ -39,11 +39,12 @@ const projectData = [
     warning: 'This website is hosted on a free tier and may take up to 3-4 minutes to load.',
   },
   {
-    title: 'Full-Stack AI Try-On Closet',
+    title: 'AI Try-On Closet',
     image: aicloset,
     tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript', 'FastAPI', 'PostgreSQL', 'pgAdmin', 'Gemini AI', 'Hugging Face'],
     description: 'A full-stack AI-powered closet that allows users to upload photos and generate photorealistic images of themselves wearing selected clothing items. Built with a React + Tailwind CSS frontend and a FastAPI backend, it integrates Google Gemini AI for image generation. Users can manage a personal wardrobe and view their generated outfit history in an interactive, game-inspired interface.',
     warning: 'This is only available as a demo',
+    link: 'https://github.com/sacostapliego/penguin-outfits',
   },
   
 ];
