@@ -16,29 +16,29 @@ const skillsData = [
   {
     category: 'Programming Languages',
     skills: [
-      { imageSrc: pyIcon, title: 'Python', subtitle: 'Backend/AI', proficiency: 'Advanced', tags: ['Backend', 'AI', 'Data Analysis'] },
-      { imageSrc: jsIcon, title: 'JavaScript', subtitle: 'Frontend Web', proficiency: 'Advanced', tags: ['Frontend', 'Web Development', 'Dynamic Content'] },
-      { imageSrc: tsIcon, title: 'TypeScript', subtitle: 'Frontend Web/Mobile', proficiency: 'Intermediate', tags: ['Frontend', 'Type Safety', 'Scalable Apps'] },
-      { imageSrc: javaIcon, title: 'Java', subtitle: 'Backend', proficiency: 'Intermediate', tags: ['Backend', 'OOP'] },
+      { imageSrc: pyIcon, title: 'Python', subtitle: 'Backend/AI', tags: ['Backend', 'AI', 'Data Analysis'] },
+      { imageSrc: jsIcon, title: 'JavaScript', subtitle: 'Frontend Web', tags: ['Frontend', 'Web Development', 'Dynamic Content'] },
+      { imageSrc: tsIcon, title: 'TypeScript', subtitle: 'Frontend Web/Mobile', tags: ['Frontend', 'Type Safety', 'Scalable Apps'] },
+      { imageSrc: javaIcon, title: 'Java', subtitle: 'Backend', tags: ['Backend', 'OOP'] },
     ],
   },
   {
     category: 'Frameworks',
     skills: [
-      { imageSrc: reactIcon, title: 'React', subtitle: 'Frontend', proficiency: 'Advanced', tags: ['Frontend', 'UI/UX', 'Component-Based'] },
-      { imageSrc: nodeIcon, title: 'Node.js', subtitle: 'Packages', proficiency: 'Intermediate', tags: ['Backend', 'APIs', 'Server-Side'] },
-      { imageSrc: chakraIcon, title: 'Chakra UI', subtitle: 'Styling', proficiency: 'Advanced', tags: ['Styling', 'Responsive Design', 'UI Components'] },
-      { imageSrc: expoIcon, title: 'Expo', subtitle: 'Mobile Apps', proficiency: 'Intermediate', tags: ['Mobile', 'Cross-Platform', 'React Native'] },
+      { imageSrc: reactIcon, title: 'React', subtitle: 'Frontend', tags: ['Frontend', 'UI/UX', 'Component-Based'] },
+      { imageSrc: nodeIcon, title: 'Node.js', subtitle: 'Packages', tags: ['Backend', 'APIs', 'Server-Side'] },
+      { imageSrc: chakraIcon, title: 'Chakra UI', subtitle: 'Styling', tags: ['Styling', 'Responsive Design', 'UI Components'] },
+      { imageSrc: expoIcon, title: 'Expo', subtitle: 'Mobile Apps', tags: ['Mobile', 'Cross-Platform', 'React Native'] },
     ],
   },
   {
     category: 'Tools & Platforms',
     skills: [
-      { imageSrc: gitIcon, title: 'Git', subtitle: 'Version Control', proficiency: 'Advanced', tags: ['Version Control', 'Collaboration', 'Repositories'] },
-      { imageSrc: awsIcon, title: 'AWS', subtitle: 'Cloud/Image Hosting', proficiency: 'Intermediate', tags: ['Cloud', 'Hosting', 'Scalability'] },
-      { imageSrc: postgresIcon, title: 'PostgreSQL', subtitle: 'Local Database', proficiency: 'Intermediate', tags: ['Database', 'Relational', 'SQL'] },
-      { imageSrc: supabaseIcon, title: 'Supabase', subtitle: 'Database', proficiency: 'Beginner', tags: ['Database', 'Backend', 'Open Source'] },
-      { imageSrc: mongoIcon, title: 'MongoDB', subtitle: 'Database', proficiency: 'Intermediate', tags: ['Database', 'NoSQL', 'Scalable'] },
+      { imageSrc: gitIcon, title: 'Git', subtitle: 'Version Control', tags: ['Version Control', 'Collaboration', 'Repositories'] },
+      { imageSrc: awsIcon, title: 'AWS', subtitle: 'Cloud/Image Hosting', tags: ['Cloud', 'Hosting', 'Scalability'] },
+      { imageSrc: postgresIcon, title: 'PostgreSQL', subtitle: 'Local Database', tags: ['Database', 'Relational', 'SQL'] },
+      { imageSrc: supabaseIcon, title: 'Supabase', subtitle: 'Database', tags: ['Database', 'Backend', 'Open Source'] },
+      { imageSrc: mongoIcon, title: 'MongoDB', subtitle: 'Database', tags: ['Database', 'NoSQL', 'Scalable'] },
     ],
   },
 ];

@@ -113,9 +113,6 @@ const SkillsGrid = ({ skillsData }) => {
                     alignItems={'flex-start'}
                     cursor={'default'}
                   >
-                    <Text fontSize={{ base: "0.8rem", md: "0.7rem", '2xl': "0.8rem" }} color="gray.300" mb="0.5rem">
-                      Proficiency: {skill.proficiency}
-                    </Text>
                     <Wrap spacing={2} justify="flex-start">
                       {skill.tags.map((tag, tagIdx) => (
                         <Badge 
