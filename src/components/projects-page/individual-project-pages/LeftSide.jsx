@@ -50,6 +50,7 @@ function LeftSideProjectsPage() {
             p="1rem"
             borderRadius="md"
             border="1px solid rgba(255, 255, 0, 0.5)"
+            justifyContent={'center'}
           >
             <Icon as={BiError} boxSize={{ base: "1.5rem", md: "1rem", '2xl': "1.5rem" }} color="yellow.400" mr="0.5rem" />
             <Text fontSize={{ base: "0.7rem", md: "0.7rem", '2xl': "1rem" }} color="yellow.300" fontWeight="600">
@@ -59,10 +60,12 @@ function LeftSideProjectsPage() {
         )}
   
         {/* External Website Button */}
-        <HoverArrowButton
-          href={project.link}
-          children={`Go To ${project.title}`} // Dynamically set button text
-        />
+        {project.link && (
+          <HoverArrowButton
+            href={project.link}
+            children={`Go To ${project.title}`} // Dynamically set button text
+          />
+        )}
 
         {/* Technologies Used */}
         <Wrap spacing={2}>
