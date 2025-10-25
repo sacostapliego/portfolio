@@ -88,15 +88,6 @@ const SkillsGrid = ({ skillsData }) => {
                       >
                         {skill.title}
                       </Text>
-                      <Text
-                        fontSize={{ base: '0.875rem', lg: '0.875rem' }}
-                        fontWeight="light"
-                        color="rgba(255,255,255,0.7)"
-                        w={'full'}
-                        textAlign={'left'}
-                      >
-                        {skill.subtitle}
-                      </Text>
                     </VStack>
                   </Box>
 
