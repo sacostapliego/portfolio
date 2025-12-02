@@ -1,6 +1,7 @@
 import { Box, HStack } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from "react-icons/io";
+import SocialIconButton from './common/SocialIconButton';
 
 export default function Footer() {
   return (
@@ -16,104 +17,21 @@ export default function Footer() {
       p={24}
     >
       <HStack gap={6} mt={-50}>
-        {/* GitHub */}
-        <Box
-          as="a"
-          href="https://github.com/sacostapliego/"
-          target="_blank"
-          rel="noopener noreferrer"
-          position="relative"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          h="48px"
-          w="48px"
-          borderRadius="8px"
-          color="gray.400"
-          background="#1d1d1d"
-          p={3}
-          role="group"
-          _hover={{
-            '& .footer-icon': {
-              transform: 'scale(1.18)',
-              color: '#FAF9F6',
-            },
-          }}
-        >
-          <Box
-            as={FaGithub}
-            className="footer-icon"
-            boxSize="40px"
-            transition="transform .25s ease, color .25s ease"
-            transformOrigin="50% 50%"
-          />
-        </Box>
-
-        {/* LinkedIn */}
-        <Box
-          as="a"
-          href="https://www.linkedin.com/in/steven-acosta-pliego/"
-          target="_blank"
-          rel="noopener noreferrer"
-          position="relative"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          h="48px"
-          w="48px"
-          borderRadius="8px"
-          color="gray.400"
-          background="#1d1d1d"
-          p={3}
-          role="group"
-          _hover={{
-            '& .footer-icon': {
-              transform: 'scale(1.18)',
-              color: '#FAF9F6',
-            },
-          }}
-        >
-          <Box
-            as={FaLinkedin}
-            className="footer-icon"
-            boxSize="40px"
-            transition="transform .25s ease, color .25s ease"
-            transformOrigin="50% 50%"
-          />
-        </Box>
-
-        {/* Email */}
-        <Box
-          as="a"
-          href="mailto:steven.acosta867@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          position="relative"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          h="48px"
-          w="48px"
-          borderRadius="8px"
-          color="gray.400"
-          background="#1d1d1d"
-          p={3}
-          role="group"
-          _hover={{
-            '& .footer-icon': {
-              transform: 'scale(1.18)',
-              color: '#FAF9F6',
-            },
-          }}
-        >
-          <Box
-            as={IoMdMail}
-            className="footer-icon"
-            boxSize="40px"
-            transition="transform .25s ease, color .25s ease"
-            transformOrigin="50% 50%"
-          />
-        </Box>
+        <SocialIconButton 
+          href="https://github.com/sacostapliego/" 
+          icon={FaGithub}
+          ariaLabel="GitHub Profile"
+        />
+        <SocialIconButton 
+          href="https://www.linkedin.com/in/steven-acosta-pliego/" 
+          icon={FaLinkedin}
+          ariaLabel="LinkedIn Profile"
+        />
+        <SocialIconButton 
+          href="mailto:steven.acosta867@gmail.com" 
+          icon={IoMdMail}
+          ariaLabel="Email Contact"
+        />
       </HStack>
     </Box>
   );
