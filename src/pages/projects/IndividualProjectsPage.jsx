@@ -33,7 +33,7 @@ function IndividualProjectPage() {
       mx="auto"
       pt={{ base: '5rem', lg: '5rem' }}
       minH={'70vh'}
-      direction={{ base: 'column', lg: 'row' }}
+      direction={{ base: 'column', md: 'row' }}
       align="start"
       spacing={8}
     >

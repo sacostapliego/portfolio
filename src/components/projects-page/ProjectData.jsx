@@ -14,6 +14,7 @@ const projectData = [
     link: 'https://cardinal-wishlist.onrender.com/',
     warning: 'This website is hosted on a free tier and may take up to 2-3 minutes to load.',
     overview: '',
+    github: 'https://github.com/sacostapliego/wishlist'
   },
   {
     title: 'Cardinal Wishlist Landing Page',
@@ -22,6 +23,7 @@ const projectData = [
     description:
       'Landing page for the Cardinal Wishlist application, showcasing features, benefits, and tech stack.',
     link: 'https://cardinal-wishlist.vercel.app/',
+
   },
   {
     title: 'Portfolio',
@@ -37,6 +39,7 @@ const projectData = [
     description: 'Full stack web application for browsing and managing computer parts, built with React, Spring Boot, and PostgreSQL.',
     link: 'https://blujay-pc-builds.onrender.com/dashboard/parts',
     warning: 'This website is hosted on a free tier and may take up to 3-4 minutes to load.',
+    github: 'https://github.com/sacostapliego/pc-parts-springboot'
   },
   {
     title: 'AI Try-On Closet',

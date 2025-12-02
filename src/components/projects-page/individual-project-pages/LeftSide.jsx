@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom';
-import { Box, Heading, Text, Flex, Wrap, Badge, Separator, Button, Icon } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, Wrap, Badge, Separator, Icon } from '@chakra-ui/react';
 import projectData from '../ProjectData';
 import { BiError } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
 import HoverArrowButton from '../../common/HoverArrowButton';
-
+import SocialIconButton from '../../common/SocialIconButton';
 
 function LeftSideProjectsPage() {
   const { projectName } = useParams();
@@ -59,12 +60,35 @@ function LeftSideProjectsPage() {
           </Box>
         )}
   
-        {/* External Website Button */}
-        {project.link && (
-          <HoverArrowButton
-            href={project.link}
-            children={`Go To ${project.title}`} // Dynamically set button text
-          />
+        {/* Links Section */}
+        {(project.link || project.github) && (
+          <Flex 
+            direction={{ base: 'column', xl: 'row' }}
+            justify="space-between"
+            align={{ base: 'center', xl: 'flex-start' }}
+            gap={{ base: 4, xl: 3 }}
+            mb={{ base: 3, md: 0 }}
+          >
+            {/* External Website Button */}
+            {project.link && (
+              <HoverArrowButton
+                href={project.link}
+                children={`Go To ${project.title}`}
+              />
+            )}
+
+            {/* GitHub Link */}
+            {project.github && (
+              <SocialIconButton 
+                href={project.github} 
+                icon={FaGithub}
+                ariaLabel={`${project.title} GitHub Repository`}
+                bgColor="white"
+                iconColor="black"
+                hoverColor="gray.700"
+              />
+            )}
+          </Flex>
         )}
 
         {/* Technologies Used */}
