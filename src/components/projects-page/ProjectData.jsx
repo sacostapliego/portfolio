@@ -47,7 +47,7 @@ const projectData = [
     tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript', 'FastAPI', 'PostgreSQL', 'pgAdmin', 'Gemini AI', 'Hugging Face'],
     description: 'A full-stack AI-powered closet that allows users to upload photos and generate photorealistic images of themselves wearing selected clothing items. Built with a React + Tailwind CSS frontend and a FastAPI backend, it integrates Google Gemini AI for image generation. Users can manage a personal wardrobe and view their generated outfit history in an interactive, game-inspired interface.',
     warning: 'This is only able to work locally',
-    link: 'https://github.com/sacostapliego/penguin-outfits',
+    github: 'https://github.com/sacostapliego/penguin-outfits',
   },
   
 ];
