@@ -79,13 +79,12 @@ function LeftSideProjectsPage() {
 
             {/* GitHub Link */}
             {project.github && (
-              <SocialIconButton 
+              <HoverArrowButton 
                 href={project.github} 
-                icon={FaGithub}
-                ariaLabel={`${project.title} GitHub Repository`}
-                bgColor="white"
-                iconColor="black"
-                hoverColor="gray.700"
+                children={`Repository`}
+                leftIcon={FaGithub}
+                color='white'
+                bg='#1d1d1d'
               />
             )}
           </Flex>
