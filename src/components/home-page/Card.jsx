@@ -83,7 +83,7 @@ const Card = () => {
             color="rgba(0, 0, 0, 0.5)"
             mt={{ base: '2.5rem', md: '5rem' }}
           >
-            A Software Engineer who has developed countless innovative solutions.
+            A Computer Science student @ GSU with a passion for building and learning.
           </Text>
 
           <HStack justify="center" gap={{ base: '0.75rem', md: '1rem' }} mt="1rem">
