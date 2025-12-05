@@ -32,9 +32,9 @@ const ProjectGrid = ({ projects }) => {
               }}
             >
               <VStack align="stretch" spacing={4}>
-                {/* Project Image */}
+                {/* Project images */}
                 <Image
-                  src={project.image}
+                  src={project.images[0]}
                   alt={project.title}
                   borderRadius="0.5rem"
                   w="100%"
@@ -62,7 +62,7 @@ const ProjectGrid = ({ projects }) => {
 
                 {/* Description */}
                 <Text fontSize="sm" color="gray.300">
-                  {project.description}
+                  {project.preview}
                 </Text>
               </VStack>
             </Box>
