@@ -27,7 +27,7 @@ function IndividualProjectPage() {
   return (
     <Flex
       className="fade-in"
-      w={{ base: '100%', lg: '85vw', '2xl': '75vw' }}
+      w={{ base: '100%', lg: '85vw', '2xl': '80vw' }}
       px={{ base: '1rem', lg: '2.5rem' }}
       pb="2.5rem"
       mx="auto"

@@ -25,7 +25,7 @@ export default function HoverArrowButton({
       px={px}
       borderRadius={borderRadius}
       fontWeight="semibold"
-      fontSize="lg"
+      fontSize={{base: "sm", '2xl': "lg"}}
       position="relative"
       overflow="hidden"
       transition="background 150ms ease"
