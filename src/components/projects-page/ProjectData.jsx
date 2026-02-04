@@ -23,7 +23,6 @@ const projectData = [
     preview: 'Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI.',
     description: 'Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI.',
     link: 'https://cardinal-wishlist.onrender.com/',
-    warning: 'This website is hosted on a free tier and may take up to 2-3 minutes to load.',
     github: 'https://github.com/sacostapliego/wishlist'
   },
   {
