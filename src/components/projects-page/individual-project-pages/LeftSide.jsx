@@ -38,9 +38,13 @@ function LeftSideProjectsPage() {
         <Separator mb="1.5rem" />
 
         {/* Description */}
-        <Text fontSize="1rem" color="gray.300" mb="2rem">
-          {project.description}
-        </Text>
+        <Box mb="2rem">
+          {project.description.split('\n').map((paragraph, index) => (
+            <Text key={index} fontSize="1rem" color="gray.300" mb="1rem">
+              {paragraph}
+            </Text>
+          ))}
+        </Box>
 
         {/* Warning Note */}
         {project.warning && (

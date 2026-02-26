@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Image, Heading, Text, HStack, Link } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import me from '../../components/assets/images/me.png';
+import me2 from '../../components/assets/images/me2.png';
 
 const blue = 'rgba(137, 207, 240, 1)';
 
@@ -54,7 +55,7 @@ const Card = () => {
       >
         <Box display="flex" justifyContent="center" mb="1.5rem">
           <Image
-            src={me}
+            src={me2}
             alt="Profile"
             w={{ base: '6.25rem', md: '16rem' }}
             h={{ base: '6.25rem', md: '18rem' }}
