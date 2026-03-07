@@ -43,3 +43,9 @@ h1 {
 ::-webkit-scrollbar-thumb:active {
   background: rgba(21, 21, 21, 1); /* Even darker color when active */
 }
+
+/* Nav tabs: square indicator ring, larger size */
+.nav-tabs-indicator {
+  transform: scale(1.3);
+  transform-origin: center center;
+}

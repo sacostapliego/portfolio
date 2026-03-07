@@ -18,9 +18,8 @@ const HomeContent = () => {
         as="h1"
         fontWeight="900"
         lineHeight="1.05"
-        fontSize={{ base: '2.5rem', md: '5rem', xl: '5rem' }}
+        fontSize={{ base: '2.5rem', md: '3rem', lg: '4rem', '2xl': '5rem' }}
         mb={{ base: 4, md: 2 }}
-
       >
         <Text color="rgba(251,247,245)" display="block">STEVEN</Text>
         <Text color="rgba(255,255,255,0.3)" display="block">ACOSTA-PLIEGO</Text>

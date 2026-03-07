@@ -32,7 +32,7 @@ function Resume() {
             fontSize={{ base: '2.5rem', md: '3rem', lg: '4rem' }}
             mb={{ base: '1.5rem', md: '2rem' }}
           >
-            <Text color="rgba(251,247,245)" display="block" mb={'0.5rem'} fontWeight="900">MY RÉSUMÉS</Text>
+            <Text color="rgba(251,247,245)" display="block" mb={'0.5rem'} fontWeight="900">MY RÉSUMÉ</Text>
           </Heading>
           <Separator mb={'2rem'} />
 
