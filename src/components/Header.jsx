@@ -87,6 +87,10 @@ const Header = () => {
                 h={{ base: '40px', sm: '44px', md: '48px' }}
                 bg="transparent"
                 _selected={{ bg: 'transparent' }}
+                onClick={() => {
+                  window.scrollTo({ top: 0 });
+                  navigate(item.value);
+                }}
               >
                 <NavButton
                   label={item.label}
