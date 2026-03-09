@@ -60,7 +60,6 @@ const Header = () => {
           borderRadius="16px"
           backdropFilter="blur(20px)"
           border="1px solid rgba(255, 255, 255, 0.06)"
-          boxShadow="0 4px 24px rgba(0, 0, 0, 0.2)"
           position="relative"
           w="fit-content"
           minW="min-content"
