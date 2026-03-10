@@ -64,7 +64,7 @@ const About = () => {
         <AboutCard
           title="Relevant courses"
           desc="
-          Software Development, Big Data Programming, Web Programming,
+          Machine Learning, Cloud Computing, Software Development, Big Data Programming, Web Programming,
           Data Structures, Computer Organization, System-Level Programming, 
           Linear Algebra, Discrete Math Principles of Computer Science I & II
           "
