@@ -81,7 +81,7 @@ const projectData = [
     images: [aicloset],
     tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript', 'FastAPI', 'PostgreSQL', 'pgAdmin', 'Gemini AI', 'Hugging Face'],
     description: 'The AI Virtual Closet is an innovative technical experiment that merges vintage Club Penguin aesthetics with modern generative AI to allow users to try on clothes digitally. The application manages a complex local environment where users can upload and catalog their own wardrobe items for use in AI-generated previews. \n Technically, the project focuses on orchestrating multiple image inputs (person, shirt, and pants) into a single, coherent prompt for a multimodal AI model. The backend handles heavy image processing tasks locally, including real-time background removal and model fallbacks.',
-    preview: 'A AI Virtual closet allows the user to upload their own image of themseleves or anyone to generate them with any shirts, jackets, and pants.',
+    preview: 'A full-stack AI-powered, Club Penguin inspired, closet that allows users to upload photos and generate photorealistic images of themselves wearing selected clothing items.',
     warning: 'This is only able to work locally',
     github: 'https://github.com/sacostapliego/penguin-outfits',
     keyfeatures: 

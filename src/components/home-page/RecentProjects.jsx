@@ -57,8 +57,7 @@ const RecentProjects = () => {
       <Stack className="projects-grid" spacing={{ base: 4, md: 5 }} alignItems="flex-start">
         <ProjectCard
           title="Cardinal Wishlist"
-          desc="Full stack web and mobile application to manage and share wishlists, 
-          built with React, React Native, Expo, s3, Supabase Auth and fastAPI."
+          desc="Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI."
           href="https://cardinalwishlist.vercel.app/"
           image={cardinalAppImage}
         />

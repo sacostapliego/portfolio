@@ -64,7 +64,7 @@ const skillsData = [
     category: 'Tools & Productivity',
     skills: [
       { imageSrc: gitIcon, title: 'Git',         subtitle: 'Version Control', tags: ['Version Control', 'Collaboration', 'Repositories'] },
-      { imageSrc: claudeicon,  title: 'Claude Code', subtitle: 'AI Coding',       tags: ['AI', 'Productivity', 'Automation'] },
+      // { imageSrc: claudeicon,  title: 'Claude Code', subtitle: 'AI Coding',       tags: ['AI', 'Productivity', 'Automation'] },
     ],
   },
 ];
