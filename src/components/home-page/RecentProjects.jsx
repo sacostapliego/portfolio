@@ -59,7 +59,7 @@ const RecentProjects = () => {
           title="Cardinal Wishlist"
           desc="Full stack web and mobile application to manage and share wishlists, 
           built with React, React Native, Expo, s3, Supabase Auth and fastAPI."
-          href="https://cardinal-wishlist.onrender.com/"
+          href="https://cardinalwishlist.vercel.app/"
           image={cardinalAppImage}
         />
         <ProjectCard
