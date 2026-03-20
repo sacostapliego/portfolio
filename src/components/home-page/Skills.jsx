@@ -83,7 +83,6 @@ const Skills = () => {
                 {skill.title}
               </Text>
               <Text w="full" fontSize={{ base: "0rem", md: "0.875rem" }} fontWeight="light" color="rgba(255,255,255,0.7)">
-                {skill.subtitle}
               </Text>
             </VStack>
           </Box>
