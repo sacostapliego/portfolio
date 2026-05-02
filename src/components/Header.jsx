@@ -11,16 +11,16 @@ const navItems = [
   { label: 'Home', icon: LuHouse, value: '/' },
   { label: 'Projects', icon: FaRegFolder, value: '/projects' },
   { label: 'Skills', icon: FaCode, value: '/skills' },
-  { label: 'Playground', icon: IoExtensionPuzzleOutline, value: '/playground' },
-  { label: 'Résumé', icon: IoDocumentTextOutline, value: '/resume' },
+  // { label: 'Playground', icon: IoExtensionPuzzleOutline, value: '/playground' },
+  // { label: 'Résumé', icon: IoDocumentTextOutline, value: '/resume' },
 ];
 
 const getActiveTabValue = (pathname) => {
   if (pathname === '/') return '/';
   if (pathname.startsWith('/projects')) return '/projects';
   if (pathname.startsWith('/skills')) return '/skills';
-  if (pathname.startsWith('/playground')) return '/playground';
-  if (pathname.startsWith('/resume')) return '/resume';
+  // if (pathname.startsWith('/playground')) return '/playground';
+  // if (pathname.startsWith('/resume')) return '/resume';
   return '/';
 };
 
