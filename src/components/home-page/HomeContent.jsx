@@ -92,7 +92,7 @@ const HomeContent = () => {
                 B.S. IN COMPUTER SCIENCE
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
-                GPA: 3.78/4.0; HONORS
+                GPA: 3.83/4.0; HONORS
               </Text>
             </Box>
           </Stack>
