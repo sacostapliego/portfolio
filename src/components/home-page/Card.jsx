@@ -92,6 +92,7 @@ const Card = () => {
               href="https://github.com/sacostapliego"
               isExternal
               color={blue}
+              target="_blank"
               textDecoration="none"
               p="0.5rem"
               borderRadius="0.75rem"
@@ -106,9 +107,10 @@ const Card = () => {
             </Link>
 
             <Link
-              href="https://github.com/sacostapliego"
+              href="https://www.linkedin.com/in/steven-acosta-pliego/"
               isExternal
               color={blue}
+              target="_blank"
               textDecoration="none"
               p="0.1rem"
               borderRadius="0.75rem"
@@ -117,7 +119,7 @@ const Card = () => {
               justifyContent="center"
               transition="transform 0.25s ease, background-color 0.25s ease, color 0.25s ease"  // added
               _hover={{ bg: 'rgba(255, 255, 255, 0.75)', transform: 'scale(1.18)', color: blue }}
-              aria-label="GitHub"
+              aria-label="LinkedIn"
             >
               <Box as={FaLinkedin} boxSize={{ base: '1.125rem', md: '2rem' }} />
             </Link>
