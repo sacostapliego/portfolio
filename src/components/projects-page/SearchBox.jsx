@@ -6,11 +6,21 @@ const SearchBox = ({ projectData, onFilter }) => {
   const [selectedTag, setSelectedTag] = useState(null); // State for the single selected tag
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown visibility
 
-  // Get all unique tags and their counts
-  const tagCounts = projectData.reduce((acc, project) => {
+  // Programming languages to display
+  const programmingLanguages = ['Python', 'TypeScript', 'JavaScript', 'Java'];
+
+  // Get all unique tags and their counts, filtered to only show programming languages
+  const allTags = projectData.reduce((acc, project) => {
     project.tags.forEach((tag) => {
       acc[tag] = (acc[tag] || 0) + 1;
     });
+    return acc;
+  }, {});
+
+  const tagCounts = programmingLanguages.reduce((acc, lang) => {
+    if (allTags[lang]) {
+      acc[lang] = allTags[lang];
+    }
     return acc;
   }, {});
 
@@ -46,7 +56,7 @@ const SearchBox = ({ projectData, onFilter }) => {
       {/* Search Input and Clear Button */}
       <HStack spacing={2} align="center" w="100%">
         <Input
-          placeholder="Search projects or tools used..."
+          placeholder="Search projects or languages used..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           size="lg"
