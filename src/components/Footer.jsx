@@ -28,7 +28,7 @@ export default function Footer() {
           ariaLabel="LinkedIn Profile"
         />
         <SocialIconButton 
-          href="mailto:steven.acosta867@gmail.com" 
+          href="mailto:sacostapliego@gmail.com" 
           icon={IoMdMail}
           ariaLabel="Email Contact"
         />

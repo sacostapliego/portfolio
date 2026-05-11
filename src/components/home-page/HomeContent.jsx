@@ -92,7 +92,7 @@ const HomeContent = () => {
                 B.S. IN COMPUTER SCIENCE
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
-                GPA: 3.83/4.0; HONORS
+                GPA: 3.8/4.0; HONORS
               </Text>
             </Box>
           </Stack>
@@ -144,7 +144,7 @@ const HomeContent = () => {
                 GEORGIA STATE UNIVERSITY'S PRESIDENT LIST
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
-                SUMMER 2025, SUMMER 2023, SPRING 2023, FALL 2022
+                FALL 2025, SUMMER 2025, SUMMER 2023, SPRING 2023, FALL 2022
               </Text>
             </Box>
           </Stack>
