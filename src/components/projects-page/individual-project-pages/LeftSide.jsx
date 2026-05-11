@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { Box, Heading, Text, Flex, Wrap, Badge, Separator, Icon } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, Separator, Icon, List } from '@chakra-ui/react';
 import projectData from '../ProjectData';
-import { BiError } from "react-icons/bi";
-import { FaGithub } from "react-icons/fa";
+import { FaRegStar } from 'react-icons/fa';
 import HoverArrowButton from '../../common/HoverArrowButton';
 import SocialIconButton from '../../common/SocialIconButton';
 
@@ -46,70 +45,37 @@ function LeftSideProjectsPage() {
           ))}
         </Box>
 
-        {/* Warning Note */}
-        {project.warning && (
-          <Box
-            mb="1.5rem"
-            display="flex"
-            alignItems="center"
-            p="1rem"
-            borderRadius="md"
-            border="1px solid rgba(255, 255, 0, 0.5)"
-            justifyContent={'center'}
-          >
-            <Icon as={BiError} boxSize={{ base: "1.5rem", md: "1rem", '2xl': "1.5rem" }} color="yellow.400" mr="0.5rem" />
-            <Text fontSize={{ base: "0.7rem", md: "0.7rem", '2xl': "1rem" }} color="yellow.300" fontWeight="600">
-              {project.warning}
-            </Text>
+        {/* Key Features */}
+        {project.keyfeatures && project.keyfeatures.length > 0 && (
+          <Box >
+            <Heading
+              as="h2"
+              fontSize={{ base: "1.2rem", md: "1.2rem", '2xl': "1.5rem" }}
+              mb="1rem"
+              color="rgba(251,247,245)"
+              fontWeight="700"
+              display="flex"
+              alignItems="center"
+              gap={'0.5rem'}
+            >
+              <FaRegStar color="white" />
+              Key Features
+            </Heading>
+
+            <List.Root gap={'1rem'} pl={'2rem'}>
+              {project.keyfeatures.map((feature, index) => (
+                <List.Item
+                  key={index}
+                  fontSize="1rem"
+                  color="gray.300"
+                  lineHeight="1.6"
+                >
+                  {feature}
+                </List.Item>
+              ))}
+            </List.Root>
           </Box>
         )}
-  
-        {/* Links Section */}
-        {(project.link || project.github) && (
-          <Flex 
-            direction={{ base: 'column', xl: 'row' }}
-            justify="space-between"
-            align={{ base: 'center', xl: 'flex-start' }}
-            gap={{ base: 4, xl: 3 }}
-            mb={{ base: 3, md: 0 }}
-          >
-            {/* External Website Button */}
-            {project.link && (
-              <HoverArrowButton
-                href={project.link}
-                children={`Go To ${project.title}`}
-              />
-            )}
-
-            {/* GitHub Link */}
-            {project.github && (
-              <HoverArrowButton 
-                href={project.github} 
-                children={`Repository`}
-                leftIcon={FaGithub}
-                color='white'
-                bg='#1d1d1d'
-              />
-            )}
-          </Flex>
-        )}
-
-        {/* Technologies Used */}
-        <Wrap spacing={2}>
-          {project.tags.map((tag, index) => (
-            <Badge
-              key={index}
-              color="white"
-              backgroundColor="rgba(43, 43, 43, 1)"
-              fontSize="0.9rem"
-              px="2"
-              py="1"
-              borderRadius="md"
-            >
-              {tag}
-            </Badge>
-          ))}
-        </Wrap>
       </Box>
     </Flex>
   );
