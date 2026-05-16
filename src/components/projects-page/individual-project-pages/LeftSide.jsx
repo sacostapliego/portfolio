@@ -62,7 +62,7 @@ function LeftSideProjectsPage() {
               Key Features
             </Heading>
 
-            <List.Root gap={'1rem'} pl={'2rem'}>
+            <List.Root gap={'1rem'} pl={'1.5rem'}>
               {project.keyfeatures.map((feature, index) => (
                 <List.Item
                   key={index}

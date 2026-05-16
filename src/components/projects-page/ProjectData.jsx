@@ -25,7 +25,7 @@ const projectData = [
   {
     title: 'Cardinal Wishlist',
     images: [cardinalPage2, cardinalPage, cardinalPage3],
-    tags: ['Python', 'FastAPI', 'React Native', 'Supabase', 'AWS (s3)', 'TypeScript', 'Render', 'PostgreSQL', 'Vercel', 'React', 'NextJS'],
+    tags: ['Python', 'FastAPI', 'React Native', 'Supabase', 'AWS (s3)', 'TypeScript', 'Render', 'PostgreSQL', 'Vercel', 'React', 'NextJS', 'Chakra UI', 'JavaScript'],
     preview: 'Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI.',
     description: 'This project is a comprehensive, cross-platform wishlist ecosystem designed to streamline the gift-giving process across iOS, Android, and Web platforms. The application solves the coordination problem inherent in holiday or event planning by providing a real-time, centralized hub where users can manage lists and track item claims. \nArchitecturally, the project transitioned from a Vite-based Single Page Application to a Next.js framework to leverage better routing and performance. The system handles complex data flows, from automated product metadata extraction via web scraping to secure, multi-platform user sessions.',
     link: 'https://cardinalwishlist.vercel.app/',
@@ -36,15 +36,6 @@ const projectData = [
       'URL Web Scraping: Developed a Python-based scraping utility using BeautifulSoup4 to parse product details from major retailers like Amazon, featuring randomized user agents to maintain reliability.',
       'Cloud Image Pipeline: Integrated an image processing workflow using Pillow for background removal and AWS S3 for scalable, secure object storage of user-uploaded assets.',
     ],
-  },
-  {
-    title: 'Cardinal Wishlist Landing Page',
-    images: [cardinalLandingPage],
-    tags: ['React', 'Chakra UI', 'Vercel', 'JavaScript', 'Vite'],
-    description: 'Landing page for the Cardinal Wishlist application, showcasing features, benefits, and tech stack.',
-    preview:'Landing page for the Cardinal Wishlist application, showcasing features, benefits, and tech stack.',
-    link: 'https://cardinal-wishlist.vercel.app/',
-
   },
   {
     title: 'Portfolio',
@@ -79,7 +70,7 @@ const projectData = [
   {
     title: 'AI Try-On Closet',
     images: [aicloset],
-    tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript', 'FastAPI', 'PostgreSQL', 'pgAdmin', 'Gemini AI', 'Hugging Face'],
+    tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript', 'FastAPI', 'PostgreSQL', 'pgAdmin', 'Gemini AI', 'Hugging Face', 'Python', 'rembg', 'Pillow'],
     description: 'The AI Virtual Closet is an innovative technical experiment that merges vintage Club Penguin aesthetics with modern generative AI to allow users to try on clothes digitally. The application manages a complex local environment where users can upload and catalog their own wardrobe items for use in AI-generated previews. \n Technically, the project focuses on orchestrating multiple image inputs (person, shirt, and pants) into a single, coherent prompt for a multimodal AI model. The backend handles heavy image processing tasks locally, including real-time background removal and model fallbacks.',
     preview: 'A full-stack AI-powered, Club Penguin inspired, closet that allows users to upload photos and generate photorealistic images of themselves wearing selected clothing items.',
     warning: 'This is only able to work locally',
