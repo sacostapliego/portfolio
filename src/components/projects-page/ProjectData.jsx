@@ -13,7 +13,9 @@ import blujayPage2 from '../assets/projects/full/blujay-full2.png'
 import blujayPage3 from '../assets/projects/full/blujay-full3.png'
 
 // Portfolio Images
-import portfolioPage from '../assets/projects/full/portfolio-full.png'
+import portfolioPage1 from '../assets/projects/full/portfolio-full1.png'
+import portfolioPage2 from '../assets/projects/full/portfolio-full2.png'
+import portfolioPage3 from '../assets/projects/full/portfolio-full3.png'
 
 // AI Closet Images
 import aicloset from '../assets/projects/full/ai-closet-full.png'
@@ -40,7 +42,7 @@ const projectData = [
   },
   {
     title: 'Portfolio',
-    images: [portfolioPage],
+    images: [portfolioPage1, portfolioPage2, portfolioPage3],
     tags: ['React', 'Chakra UI', 'Vite', 'JavaScript', 'Vercel', 'Node.js'],
     description: 'This portfolio is a high-performance Single Page Application (SPA) designed to act as a professional digital resume and a testing ground for new technologies. It prioritizes user experience through responsive design, dark-mode support, and custom-engineered UI components like 3D flip cards and search filters.\nBeyond standard project showcasing, the site includes an interactive Playground where external APIs, such as Google Gemini, are integrated to demonstrate live AI implementation. The deployment pipeline is optimized via Vercel, utilizing rewrites to maintain clean client-side routing across all project detail pages.',
     preview: 'Showcasing my work and skills as a computer science student.',
@@ -54,7 +56,7 @@ const projectData = [
   },
   {
     title: 'BlueJay Computer Catalog',
-    images: [blujayPage1, blujayPage2, blujayPage3],
+    images: [blujayPage3, blujayPage2, blujayPage1],
     keyfeatures: 
     [
       'Role-Based Security (RBAC): Engineered a stateless authentication system using JWT and BCrypt password hashing, enforcing strict Admin-only write permissions across the catalog.',
