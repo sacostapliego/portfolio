@@ -5,6 +5,7 @@ import cardinalLandingPage from '../assets/projects/full/cardinal-landing-full.p
 import cardinalPage from '../assets/projects/full/cardinal-full.png'
 import cardinalPage2 from '../assets/projects/full/cardinal-full2.png'
 import cardinalPage3 from '../assets/projects/full/cardinal-full3.png'
+import cardinalPage4 from '../assets/projects/full/cardinal-full4.png'
 
 // BluJay Images
 import blujayPage1 from '../assets/projects/full/blujay-full1.png'
@@ -24,7 +25,7 @@ import n8nPage2 from '../assets/projects/full/n8n-full2.png'
 const projectData = [
   {
     title: 'Cardinal Wishlist',
-    images: [cardinalPage2, cardinalPage, cardinalPage3],
+    images: [cardinalPage4, cardinalPage, cardinalPage3, cardinalPage2],
     tags: ['Python', 'FastAPI', 'React Native', 'Supabase', 'AWS (s3)', 'TypeScript', 'Render', 'PostgreSQL', 'Vercel', 'React', 'NextJS', 'Chakra UI', 'JavaScript'],
     preview: 'Full stack web and mobile application to manage and share wishlists, built with React, React Native, Expo, S3, Supabase Auth, and FastAPI.',
     description: 'This project is a comprehensive, cross-platform wishlist ecosystem designed to streamline the gift-giving process across iOS, Android, and Web platforms. The application solves the coordination problem inherent in holiday or event planning by providing a real-time, centralized hub where users can manage lists and track item claims. \nArchitecturally, the project transitioned from a Vite-based Single Page Application to a Next.js framework to leverage better routing and performance. The system handles complex data flows, from automated product metadata extraction via web scraping to secure, multi-platform user sessions.',
