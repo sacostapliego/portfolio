@@ -10,7 +10,7 @@ import ProjectCard from './components/ProjectCard';
 
 import cardinalAppImage from '../assets/projects/recent/cardinal.png'
 import aiclosetImage from '../assets/projects/recent/ai-closet.png'
-import portfolioImage from '../assets/projects/full/portfolio-full.png'
+import portfolioImage from '../assets/projects/full/portfolio-full1.png'
 
 
 const RecentProjects = () => {
