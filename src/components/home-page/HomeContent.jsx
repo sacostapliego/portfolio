@@ -92,10 +92,10 @@ const HomeContent = () => {
                 B.S. IN COMPUTER SCIENCE
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
-                GPA: 3.82/4.0; HONORS
+                GPA: 3.82/4.0; Honors College
               </Text>
               <Text fontSize={{ base: '0.75rem', md: '0.8rem' }} fontWeight="500" color="rgba(255,255,255,0.82)">
-                Magna Cum Laude, President's List (5 semesters)
+                Magna Cum Laude, President's List (5x)
               </Text>
             </Box>
           </Stack>
