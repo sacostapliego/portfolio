@@ -13,7 +13,7 @@ function Resume() {
     */}
       <Flex
         className="fade-in"
-        w={{ base: '100%', lg: '85vw', '2xl': '70vw'  }}
+        w={{ base: '100%', lg: '85vw', '2xl': 'min(95vw, 84rem)' }}
         px={{ base: '1rem', lg: '2.5rem' }}
         pb="2.5rem"
         mx="auto"

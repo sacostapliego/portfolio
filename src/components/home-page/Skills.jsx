@@ -2,6 +2,12 @@ import { useEffect, useRef } from 'react';
 import { Box, SimpleGrid, Heading, Text, VStack, Image, Icon } from '@chakra-ui/react';
 import '../animations/reveal.css'
 import skillsData from './components/SkillsData';
+import {
+  SKILL_BADGE,
+  BADGE_BG,
+  BADGE_RADIUS,
+  BADGE_PADDING,
+} from './components/badgeSizing';
 
 const Skills = () => {
   const sectionRef = useRef(null);
@@ -58,9 +64,10 @@ const Skills = () => {
             display="flex"
             flexDirection={{ base: "column", md: "row" }}
             alignItems="center"
-            justifyContent="flex-start" 
+            justifyContent={{ base: 'center', md: 'flex-start' }}
+            gap={{ base: 2, md: 4 }}
             w={'100%'}
-            h="6rem"
+            minH={{ base: '7rem', md: '6rem' }}
             transition="transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease"
             _hover={{
               bg: 'rgba(25,25,25,0.95)',
@@ -72,17 +79,22 @@ const Skills = () => {
             <Image
               src={skill.imageSrc}
               alt={skill.title}
-              boxSize="4rem"
-              background={'white'}
-              borderRadius="0.5rem"
-              padding={'0.5rem'}
-              mr={4}
+              boxSize={SKILL_BADGE}
+              objectFit="contain"
+              flexShrink={0}
+              background={BADGE_BG}
+              borderRadius={BADGE_RADIUS}
+              padding={BADGE_PADDING}
             />
             <VStack align="center" gap={0}>
-              <Text w="full" fontSize={{base:"1.25rem", lg:'1.25rem', '2xl':"1.5rem"}} fontWeight="bolder" color="rgba(251,247,245)">
+              <Text
+                w="full"
+                textAlign={{ base: 'center', md: 'left' }}
+                fontSize={{ base: '1rem', md: '1.25rem' }}
+                fontWeight="bolder"
+                color="rgba(251,247,245)"
+              >
                 {skill.title}
-              </Text>
-              <Text w="full" fontSize={{ base: "0rem", md: "0.875rem" }} fontWeight="light" color="rgba(255,255,255,0.7)">
               </Text>
             </VStack>
           </Box>

@@ -10,6 +10,12 @@ import {
 } from '@chakra-ui/react'
 import { IoMdSchool } from 'react-icons/io'
 import { GiStarsStack } from 'react-icons/gi'
+import {
+  ACCOLADE_BADGE,
+  BADGE_BG,
+  BADGE_RADIUS,
+  BADGE_PADDING,
+} from './components/badgeSizing'
 
 const HomeContent = () => {
   return (
@@ -69,18 +75,18 @@ const HomeContent = () => {
           <Stack spacing={3} height="100%" align="flex-start">
             <Box width="100%">
               <Box
-                bg="rgba(251,247,245)"
-                borderRadius="0.5rem"
-                p="8px"
-                w={{ base: '3rem', md: '6rem' }}   /* mobile: 3rem */
-                h={{ base: '3rem', md: '6rem' }}   /* mobile: 3rem */
+                bg={BADGE_BG}
+                borderRadius={BADGE_RADIUS}
+                p={BADGE_PADDING}
+                w={ACCOLADE_BADGE}
+                h={ACCOLADE_BADGE}
+                flexShrink={0}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
                 overflow="hidden"
-                fontSize={{ base: '1.25rem', md: 'inherit' }} /* mobile font-size */
               >
-                <Image src="/gsu2.png" alt="Georgia State logo" objectFit="cover" w="100%" h="100%" />
+                <Image src="/gsu2.png" alt="Georgia State logo" objectFit="contain" w="100%" h="100%" />
               </Box>
             </Box>
 
@@ -124,18 +130,18 @@ const HomeContent = () => {
           <Stack spacing={3} height="100%" align="flex-start">
             <Box width="100%">
               <Box
-                bg="rgba(251,247,245)"
-                borderRadius="0.5rem"
-                p="8px"
-                w={{ base: '3rem', md: '6rem' }}   /* mobile: 3rem */
-                h={{ base: '3rem', md: '6rem' }}   /* mobile: 3rem */
+                bg={BADGE_BG}
+                borderRadius={BADGE_RADIUS}
+                p={BADGE_PADDING}
+                w={ACCOLADE_BADGE}
+                h={ACCOLADE_BADGE}
+                flexShrink={0}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
                 overflow="hidden"
-                fontSize={{ base: '1.25rem', md: 'inherit' }} /* mobile font-size */
               >
-                <Image src="/president.png" alt="President's list badge" objectFit="cover" w="100%" h="100%" />
+                <Image src="/president.png" alt="President's list badge" objectFit="contain" w="100%" h="100%" />
               </Box>
             </Box>
 

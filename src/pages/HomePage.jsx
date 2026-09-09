@@ -14,8 +14,12 @@ function HomePage() {
         direction={{ base: 'column', lg: 'row' }}
         align={{ base: 'center', lg: 'stretch' }}
         gap={{ base: '1.25rem', lg: '2.5rem' }}
-        w={{ base: '100%', lg: '100vw', '2xl': '85vw'  }}
-        maxW={{ base: '100%', lg: '95%', '2xl': '85vw' }}
+        w={{ base: '100%', lg: '100%', '2xl': 'min(95vw, 102rem)' }}
+        /* 102rem == 85vw at 1920px. Expressing the column in rem instead of vw
+           means it keeps its 1080p proportions at every width once the root
+           font scales, so a 16:10 laptop gets the same layout rather than a
+           pinched 85% of a narrower screen. 95vw is just an overflow guard. */
+        maxW={{ base: '100%', lg: '95%', '2xl': 'min(95vw, 102rem)' }}
         px={{ base: '1rem', lg: '2.5rem' }}
         pt={{ base: '5rem', lg: '4rem' }}
         pb="2.5rem"

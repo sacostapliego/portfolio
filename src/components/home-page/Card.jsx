@@ -31,8 +31,8 @@ const Card = () => {
           position: 'absolute',
           top: { base: '-1.5rem', md: '-3rem' },
           right: { base: '-1.5rem', md: '-3rem' },
-          w: { base: '80px', md: '150px' },
-          h: { base: '80px', md: '150px' },
+          w: { base: '5rem', md: '9.375rem' },
+          h: { base: '5rem', md: '9.375rem' },
           border: 'dashed',
           borderColor: blue,
           borderWidth: { base: '3px', md: '5px' },
@@ -44,8 +44,8 @@ const Card = () => {
           position: 'absolute',
           bottom: { base: '-1rem', md: '-2rem' },
           left: { base: '-1rem', md: '-2rem' },
-          w: { base: '70px', md: '125px' },
-          h: { base: '70px', md: '125px' },
+          w: { base: '4.375rem', md: '7.8125rem' },
+          h: { base: '4.375rem', md: '7.8125rem' },
           border: 'dashed',
           borderColor: blue,
           borderWidth: { base: '3px', md: '5px' },
@@ -59,7 +59,7 @@ const Card = () => {
             alt="Profile"
             w={{ base: '6.25rem', md: '16rem' }}
             h={{ base: '6.25rem', md: '18rem' }}
-            borderRadius="8px"
+            borderRadius="0.5rem"
             objectFit="cover"
             transition="transform 0.3s ease"
             background={blue}

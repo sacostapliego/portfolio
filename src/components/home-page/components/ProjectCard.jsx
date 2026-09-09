@@ -47,8 +47,8 @@ const ProjectCard = ({ title, desc, href, image }) => {
           boxSize={5}
           color='rgba(137, 207, 240, 1)'
           position="absolute"
-          right="12px"
-          top="12px"
+          right="0.75rem"
+          top="0.75rem"
           pointerEvents="none"
         />
 
