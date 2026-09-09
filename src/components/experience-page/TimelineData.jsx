@@ -33,7 +33,7 @@
 const timelineData = [
   {
     id: 'gsu-bs-cs',
-    color: 'rgba(0, 113, 206, 1)', // Georgia State blue
+    color: 'rgba(0, 113, 206, 1)',
     title: 'B.S. in Computer Science',
     org: 'Georgia State University',
     location: 'Atlanta, GA',
@@ -49,35 +49,32 @@ const timelineData = [
   },
   {
     id: 'capstone',
-    color: 'rgba(230, 162, 60, 1)', // capstone amber
-    title: 'Senior Capstone',
+    color: 'rgba(34, 88, 50, 1)',
+    title: 'Software Engineering (Capstone)',
     org: 'Georgia State University',
     location: 'Atlanta, GA',
     start: '2025-08',
     end: '2026-05',
     summary:
-      'Placeholder copy -- describe what the project actually did, who it was for, and what you owned on the team.',
+      'Created Fresh Picks, a mobile app for discovering and sharing fresh produce.',
     highlights: [
-      'The problem it solved, in one line.',
-      'The part you built.',
+      // TODO
     ],
-    tags: ['React', 'Python'],
+    tags: ['React', 'Python', 'Supabase', 'Agile', 'GitHub', 'TypeScript'],
   },
   {
     id: 'software-role',
-    color: 'rgba(147, 39, 252, 1)', // employer purple
+    color: 'rgba(147, 39, 252, 1)',
     title: 'Software Developer',
-    org: 'Add your employer',
+    org: 'USAN',
     location: 'Norcross, GA',
     start: '2026-04',
     end: null,
     summary:
-      'Placeholder copy -- swap this for the real role. A sentence or two on what the team builds and what you own reads better here than a list of duties.',
+      'Currently working as a software developer at USAN, contributing to projects, cordinating with QA teams, and collaborating with cross-functional teams to deliver high-quality solutions.',
     highlights: [
-      'A result you can put a number on.',
-      'Something you built or shipped end to end.',
+      // TODO
     ],
-    tags: ['React', 'FastAPI', 'PostgreSQL'],
   },
 ];
 
