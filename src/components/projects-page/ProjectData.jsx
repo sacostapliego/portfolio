@@ -109,6 +109,8 @@ const projectData = [
     tags: ['Python', 'Jupyter Notebook', 'Java', 'JavaScript', 'C', "Assembly", 'GitHub Pages', 'HTML', 'CSS'],
     description: 'This project is a comprehensive digital portfolio designed to showcase the academic and technical progress of my time at Georgia State University. The portfolio serves as a centralized hub for all coursework, projects, and extracurricular activities, providing an organized and visually appealing presentation of the student\'s journey through their degree program. \n The portfolio is structured to highlight key milestones, including major projects, research papers, and relevant coursework, with detailed descriptions and links to GitHub repositories for code samples.',
     preview: 'A comprehensive digital portfolio showcasing the academic and technical progress of a my time at Georgia State University.',
+    link: 'https://sacostapliego.github.io/GSU-Portfolio/',
+    github: 'https://github.com/sacostapliego/GSU-Portfolio',
   }
   
 ];

@@ -44,8 +44,9 @@ const timelineData = [
     highlights: [
       'GPA 3.82 / 4.0 — Magna Cum Laude',
       "President's List: Fall 2025, Summer 2025, Summer 2023, Spring 2023, Fall 2022",
+      "Dean's List: Spring 2026, Spring 2025, Fall 2023"
     ],
-    tags: ['Machine Learning', 'Cloud Computing', 'Data Structures', 'Linear Algebra'],
+    tags: ['Machine Learning', 'Cloud Computing', 'Data Structures', 'Linear Algebra', 'Software Development', 'Big Data Programming'],
   },
   {
     id: 'capstone',
