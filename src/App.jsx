@@ -5,7 +5,6 @@ import Homepage from './pages/HomePage';
 import Resume from './pages/Resume';
 import ProjectsPage from './pages/ProjectsPage';
 import ExperiencePage from './pages/ExperiencePage';
-import PlaygroundPage from './pages/PlaygroundPage';
 import IndividualProjectPage from './pages/projects/IndividualProjectsPage';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         {/* /skills was this page's original route; keep old links working. */}
         <Route path="/skills" element={<Navigate to="/experience" replace />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/playground" element={<PlaygroundPage />} />
       </Routes>
       <Footer />
     </Router>
